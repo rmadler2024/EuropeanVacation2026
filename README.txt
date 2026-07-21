@@ -1,0 +1,1 @@
+Add your custom banner and city images into an images folder.
