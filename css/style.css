@@ -27,6 +27,9 @@ body{
 
     z-index:10;
 }
+.hero-overlay .btn{
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
 
 /* ---------- DESTINATIONS ---------- */
 
