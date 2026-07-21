@@ -34,34 +34,43 @@ body{
 .hero-button{
     position:absolute;
 
-    left:15%;
-    bottom:17%;      /* moved up slightly */
+    left:10%;
+    bottom:18%;
 
     transform:translateX(-50%);
     z-index:100;
 
-    padding:16px 40px;
-    font-size:1.3rem;
+    padding:18px 46px;
+    font-size:1.45rem;
     font-weight:bold;
 
     background:#0f2748;
     color:#f4c542;
 
     border:2px solid #f4c542;
-    border-radius:12px;
+    border-radius:16px;
 
     text-decoration:none;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35),
+        0 0 12px rgba(244,197,66,.25);
 
-    transition:.25s;
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
 }
 
 .hero-button:hover{
-    background:#173b69;
+    background:#1b3f70;
     color:#ffd86b;
-    transform:translateY(-3px);
-    box-shadow:0 14px 35px rgba(0,0,0,.45);
+    border-color:#ffd86b;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.40),
+        0 0 16px rgba(255,216,107,.40);
 }
 /* COUNTDOWN */
 
