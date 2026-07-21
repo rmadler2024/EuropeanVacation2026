@@ -29,8 +29,10 @@ body{
 ===================================================== */
 
 .hero{
+    height:70vh;
+    background:url("../images/Hero_Image.png") center center;
+    background-size:cover;
     position:relative;
-    width:100%;
 }
 
 .hero img{
