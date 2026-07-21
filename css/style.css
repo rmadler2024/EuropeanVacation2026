@@ -1,10 +1,3 @@
-body{
-    background:red !important;
-}
-/* =====================================================
-   GENERAL
-===================================================== */
-
 html{
     scroll-behavior:smooth;
 }
@@ -15,149 +8,98 @@ body{
     background:#f5f5f5;
 }
 
-/* =====================================================
-   NAVBAR
-===================================================== */
+/* NAVBAR */
 
 .navbar{
-    background:rgba(33,37,41,.90)!important;
-    backdrop-filter:blur(8px);
+    background:#212529 !important;
 }
 
-/* =====================================================
-   HERO
-===================================================== */
+/* HERO */
 
 .hero{
-    height:70vh;
-    background:url("../images/Hero_Image.png") center center;
-    background-size:cover;
-    position:relative;
-}
 
-.hero img{
-    display:block;
-    width:100%;
-    height:auto;
+    height:70vh;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)),
+        url("../images/Hero_Image.png");
+
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+
+    padding-bottom:50px;
 }
 
 .hero-overlay{
-    position:absolute;
-    left:50%;
-    bottom:90px;
 
-    transform:translateX(-50%);
-    z-index:1000;
 }
 
 .hero-overlay .btn{
-    font-size:1.35rem;
-    padding:16px 40px;
-    border-radius:12px;
+
+    font-size:1.3rem;
     font-weight:bold;
-    box-shadow:0 12px 30px rgba(0,0,0,.45);
+
+    padding:15px 40px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.4);
+
 }
 
-/* =====================================================
-   COUNTDOWN
-===================================================== */
+/* COUNTDOWN */
 
 .countdown{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
 
-.countdown h2{
-    margin:0 0 10px;
-    font-size:2rem;
+    background:#0d6efd;
+
+    color:white;
+
+    padding:50px 20px;
+
 }
 
 .countdown h1{
-    margin:0;
-    font-size:3.2rem;
-    font-weight:700;
+
+    font-size:3rem;
+
 }
 
-/* =====================================================
-   DESTINATIONS
-===================================================== */
+/* CARDS */
 
 .card{
+
     border:none;
+
     border-radius:12px;
-    overflow:hidden;
-    transition:.30s;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.25s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
 }
 
 .card:hover{
+
     transform:translateY(-8px);
-    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
 }
 
-.card-body{
-    padding:1.5rem;
-}
-
-.card h4{
-    margin-bottom:.75rem;
-}
-
-/* =====================================================
-   FOOTER
-===================================================== */
+/* FOOTER */
 
 footer{
+
     background:#212529;
+
     color:white;
+
     text-align:center;
+
     padding:30px;
-}
-
-footer p{
-    margin-bottom:0;
-}
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width:992px){
-
-    .hero-overlay{
-        top:70%;
-    }
-
-    .hero-overlay .btn{
-        font-size:1.1rem;
-        padding:14px 28px;
-    }
-
-    .countdown h1{
-        font-size:2.5rem;
-    }
-
-}
-
-@media (max-width:576px){
-
-    .hero-overlay{
-        top:73%;
-    }
-
-    .hero-overlay .btn{
-        font-size:1rem;
-        padding:12px 22px;
-    }
-
-    .countdown h2{
-        font-size:1.5rem;
-    }
-
-    .countdown h1{
-        font-size:2rem;
-    }
 
 }
