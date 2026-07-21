@@ -35,7 +35,7 @@ body{
     position:absolute;
 
     left:12%;
-    bottom:16%;      /* moved up slightly */
+    bottom:20%;      /* moved up slightly */
 
     transform:translateX(-50%);
     z-index:100;
