@@ -31,8 +31,6 @@ body{
 .hero{
     position:relative;
     width:100%;
-    overflow:hidden;
-    line-height:0;
 }
 
 .hero img{
@@ -41,38 +39,21 @@ body{
     height:auto;
 }
 
-/* Dark overlay */
-
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.18);
-    pointer-events:none;
-}
-
-/* Button */
-
 .hero-overlay{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    left:50%;
+    bottom:90px;
 
-    display:flex;
-    justify-content:center;
-    align-items:flex-end;
-
-    padding-bottom:120px;   /* was 40px */
-    z-index:100;
+    transform:translateX(-50%);
+    z-index:1000;
 }
+
 .hero-overlay .btn{
-    padding:16px 38px;
-    font-size:1.3rem;
-    font-weight:600;
+    font-size:1.35rem;
+    padding:16px 40px;
     border-radius:12px;
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    font-weight:bold;
+    box-shadow:0 12px 30px rgba(0,0,0,.45);
 }
 
 /* =====================================================
