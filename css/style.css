@@ -1,9 +1,6 @@
 body {
-    margin: 0;
-    background: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+    background: red !important;
 }
-
 .hero {
     position: relative;
     width: 100%;
