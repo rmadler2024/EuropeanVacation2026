@@ -17,41 +17,27 @@ body{
 /* HERO */
 
 .hero{
-
-    height:70vh;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.20)),
-        url("../images/Hero_Image.png");
-
-    background-position:center top;
-    background-size:cover;
-    background-repeat:no-repeat;
-
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-
-    padding-bottom:50px;
+    position:relative;
+    width:100%;
 }
 
-.hero-overlay{
-
+.hero-image{
+    display:block;
+    width:100%;
+    height:auto;
 }
 
-.hero-overlay .btn{
+.hero-button{
+    position:absolute;
+    left:50%;
+    bottom:40px;
+    transform:translateX(-50%);
+    z-index:10;
 
+    padding:16px 40px;
     font-size:1.3rem;
     font-weight:bold;
-
-    padding:15px 40px;
-
-    border-radius:12px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.4);
-
 }
-
 /* COUNTDOWN */
 
 .countdown{
