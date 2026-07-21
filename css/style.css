@@ -2,14 +2,14 @@
    GENERAL
 ===================================================== */
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
     background:#f5f5f5;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 /* =====================================================
@@ -17,7 +17,7 @@ html{
 ===================================================== */
 
 .navbar{
-    background:rgba(33,37,41,.92)!important;
+    background:rgba(33,37,41,.90)!important;
     backdrop-filter:blur(8px);
 }
 
@@ -44,7 +44,8 @@ html{
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.22);
+    background:rgba(0,0,0,.18);
+    pointer-events:none;
 }
 
 /* Button */
@@ -52,17 +53,17 @@ html{
 .hero-overlay{
     position:absolute;
     left:50%;
-    bottom:7%;
-    transform:translateX(-50%);
-    z-index:5;
+    top:66%;
+    transform:translate(-50%,-50%);
+    z-index:10;
 }
 
 .hero-overlay .btn{
-    padding:14px 34px;
-    font-size:1.25rem;
+    padding:16px 38px;
+    font-size:1.3rem;
     font-weight:600;
-    border-radius:10px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
 }
 
 /* =====================================================
@@ -71,21 +72,24 @@ html{
 
 .countdown{
     background:#0d6efd;
-    color:#fff;
+    color:white;
     text-align:center;
     padding:50px 20px;
 }
 
 .countdown h2{
-    margin-bottom:10px;
+    margin:0 0 10px;
+    font-size:2rem;
 }
 
 .countdown h1{
-    font-size:3rem;
+    margin:0;
+    font-size:3.2rem;
+    font-weight:700;
 }
 
 /* =====================================================
-   DESTINATION CARDS
+   DESTINATIONS
 ===================================================== */
 
 .card{
@@ -101,15 +105,23 @@ html{
     box-shadow:0 18px 35px rgba(0,0,0,.18);
 }
 
+.card-body{
+    padding:1.5rem;
+}
+
+.card h4{
+    margin-bottom:.75rem;
+}
+
 /* =====================================================
    FOOTER
 ===================================================== */
 
 footer{
     background:#212529;
-    color:#fff;
-    padding:30px;
+    color:white;
     text-align:center;
+    padding:30px;
 }
 
 footer p{
@@ -120,10 +132,27 @@ footer p{
    MOBILE
 ===================================================== */
 
-@media (max-width:768px){
+@media (max-width:992px){
 
     .hero-overlay{
-        bottom:5%;
+        top:70%;
+    }
+
+    .hero-overlay .btn{
+        font-size:1.1rem;
+        padding:14px 28px;
+    }
+
+    .countdown h1{
+        font-size:2.5rem;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .hero-overlay{
+        top:73%;
     }
 
     .hero-overlay .btn{
@@ -131,7 +160,12 @@ footer p{
         padding:12px 22px;
     }
 
+    .countdown h2{
+        font-size:1.5rem;
+    }
+
     .countdown h1{
         font-size:2rem;
     }
+
 }
