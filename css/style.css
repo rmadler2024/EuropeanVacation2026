@@ -31,24 +31,36 @@ body{
     position: relative;
 }
 
-.hero-button {
-    position: absolute;
+.hero-button{
+    position:absolute;
 
-    /* Position in the open field */
-    left: 16%;
-    bottom: 12%;
+    left:12%;
+    bottom:16%;      /* moved up slightly */
 
-    transform: translateX(-50%);
+    transform:translateX(-50%);
+    z-index:100;
 
-    z-index: 100;
+    padding:16px 40px;
+    font-size:1.3rem;
+    font-weight:bold;
 
-    padding: 16px 40px;
-    font-size: 1.3rem;
-    font-weight: bold;
+    background:#0f2748;
+    color:#f4c542;
 
-    border-radius: 12px;
+    border:2px solid #f4c542;
+    border-radius:12px;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    transition:.25s;
+}
+
+.hero-button:hover{
+    background:#173b69;
+    color:#ffd86b;
+    border-color:#ffd86b;
 }
 /* COUNTDOWN */
 
