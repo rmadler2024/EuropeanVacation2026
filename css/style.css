@@ -27,20 +27,28 @@ body{
     height:auto;
 }
 
-.hero-button{
-    position:absolute;
-    left:50%;
-    bottom:8%;
-    transform:translateX(-50%);
+.hero {
+    position: relative;
+}
 
-    z-index:10;
+.hero-button {
+    position: absolute;
 
-    padding:16px 40px;
-    font-size:1.3rem;
-    font-weight:bold;
+    /* Position in the open field */
+    left: 16%;
+    bottom: 12%;
 
-    border-radius:12px;
-    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    transform: translateX(-50%);
+
+    z-index: 100;
+
+    padding: 16px 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
 }
 /* COUNTDOWN */
 
