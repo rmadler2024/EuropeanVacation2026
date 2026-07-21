@@ -1,14 +1,35 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
     background:#f5f5f5;
 }
 
-/* ---------- HERO ---------- */
+html{
+    scroll-behavior:smooth;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar{
+    background:rgba(33,37,41,.92)!important;
+    backdrop-filter:blur(8px);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero{
     position:relative;
     width:100%;
+    overflow:hidden;
+    line-height:0;
 }
 
 .hero img{
@@ -17,39 +38,100 @@ body{
     height:auto;
 }
 
+/* Dark overlay */
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.22);
+}
+
+/* Button */
+
 .hero-overlay{
     position:absolute;
     left:50%;
-    bottom:40px;
-    top:auto;
+    bottom:7%;
     transform:translateX(-50%);
+    z-index:5;
 }
+
 .hero-overlay .btn{
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    padding:14px 34px;
+    font-size:1.25rem;
+    font-weight:600;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
-/* ---------- DESTINATIONS ---------- */
-
-.card{
-    transition:.3s;
-    border:none;
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-/* ---------- COUNTDOWN ---------- */
+/* =====================================================
+   COUNTDOWN
+===================================================== */
 
 .countdown{
     background:#0d6efd;
     color:#fff;
-    padding:45px;
+    text-align:center;
+    padding:50px 20px;
 }
+
+.countdown h2{
+    margin-bottom:10px;
+}
+
+.countdown h1{
+    font-size:3rem;
+}
+
+/* =====================================================
+   DESTINATION CARDS
+===================================================== */
+
+.card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.30s;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer{
     background:#212529;
-    color:white;
-    padding:25px;
+    color:#fff;
+    padding:30px;
+    text-align:center;
+}
+
+footer p{
+    margin-bottom:0;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+    .hero-overlay{
+        bottom:5%;
+    }
+
+    .hero-overlay .btn{
+        font-size:1rem;
+        padding:12px 22px;
+    }
+
+    .countdown h1{
+        font-size:2rem;
+    }
 }
