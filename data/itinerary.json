@@ -1,1 +1,110 @@
-{}
+[
+  {
+    "date": "2026-08-08",
+    "transport": "Virgin Atlantic Flight VS26 (NYC to London)",
+    "hotel": "Holiday Inn London - Bloomsbury",
+    "activity": "Arrival"
+  },
+  {
+    "date": "2026-08-09",
+    "transport": "Eurostar Train London to Brussels",
+    "hotel": "DoubleTree by Hilton Brussels City",
+    "activity": " Royal Palace Tour (paid)"
+  },
+  {
+    "date": "2026-08-10",
+    "transport": "Brussels/Bruges",
+    "hotel": "DoubleTree by Hilton Brussels City",
+    "activity": "Bruges Tour and Canal Boat  - 1805441241"
+  },
+  {
+    "date": "2026-08-11",
+    "transport": "Travel to Amsterdam VX4PTG",
+    "hotel": "NH Collection Flower Market",
+    "activity": "Canal Boat Ride 8:30 PM - 32809085"
+  },
+  {
+    "date": "2026-08-12",
+    "transport": "Amsterdam",
+    "hotel": "NH Collection Flower Market",
+    "activity": "Anne Frank House 10:15 (paid)"
+  },
+  {
+    "date": "2026-08-13",
+    "transport": "KLM Flight KL1851 (Amsterdam to Munich) ",
+    "hotel": "Hampton by Hilton Munich City North",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-14",
+    "transport": "Munich",
+    "hotel": "Hampton by Hilton Munich City North",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-15",
+    "transport": "Munich (Neuschwanstein)",
+    "hotel": "Hampton by Hilton Munich City North",
+    "activity": "Neuschwanstein Castle"
+  },
+  {
+    "date": "2026-08-16",
+    "transport": "Train to Salzburg",
+    "hotel": "Wyndham Grand Salzburg",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-17",
+    "transport": "Salzburg",
+    "hotel": "Wyndham Grand Salzburg",
+    "activity": "Sound of Music Tour"
+  },
+  {
+    "date": "2026-08-18",
+    "transport": "Train Salzburg to Vienna",
+    "hotel": "Hilton Vienna Waterfront",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-19",
+    "transport": "Vienna",
+    "hotel": "Hilton Vienna Waterfront",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-20",
+    "transport": "Austrian Airlines Flight to Krakow  OS679 (VIE to KRK)",
+    "hotel": "Hampton by Hilton Krakow",
+    "activity": "-"
+  },
+  {
+    "date": "2026-08-21",
+    "transport": "Krakow",
+    "hotel": "Hampton by Hilton Krakow",
+    "activity": "Auschwitz-Birkenau"
+  },
+  {
+    "date": "2026-08-22",
+    "transport": "British Airways Flight BA873 (Krakow to London)",
+    "hotel": "Hampton by Hilton London City",
+    "activity": "Viator Golf Buggy Tour 9:00 am Schindler factor tour 31774161 (paid) 12:50pm"
+  },
+  {
+    "date": "2026-08-23",
+    "transport": "London",
+    "hotel": "Hampton by Hilton London City",
+    "activity": "Buckingham Palace State Rooms (9:30 AM) paid"
+  },
+  {
+    "date": "2026-08-24",
+    "transport": "London",
+    "hotel": "Hampton by Hilton London City",
+    "activity": "Tower of London, paid"
+  },
+  {
+    "date": "2026-08-25",
+    "transport": "Virgin Atlantic Flight VS0009 (London to NYC)",
+    "hotel": "-",
+    "activity": "Departure"
+  }
+]

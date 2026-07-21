@@ -1,1 +1,1 @@
-// Main JavaScript file
+console.log('loaded');
