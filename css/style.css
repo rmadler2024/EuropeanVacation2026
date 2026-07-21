@@ -13,30 +13,17 @@ body {
     height: auto;
 }
 
-.hero-content {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.35);
-    z-index: 1;
+    background: rgba(0,0,0,.25);
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    text-align: center;
-}
-
-.hero h1,
-.hero h2,
-.hero p {
-    color: white;
 }
