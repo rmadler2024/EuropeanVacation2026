@@ -1,1 +1,255 @@
-<html><head><link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'><link rel='stylesheet' href='css/style.css'></head><body><div class='hero'><div><h1>Adler / Peterman Family European Vacation</h1><h3>August 8–25, 2026</h3></div></div><div class='container'><table class='table'><tr><td>Aug 08</td><td>Virgin Atlantic Flight VS26 (NYC to London)</td><td>Holiday Inn London - Bloomsbury</td><td>Arrival</td></tr><tr><td>Aug 09</td><td>Eurostar Train London to Brussels</td><td>DoubleTree by Hilton Brussels City</td><td> Royal Palace Tour (paid)</td></tr><tr><td>Aug 10</td><td>Brussels/Bruges</td><td>DoubleTree by Hilton Brussels City</td><td>Bruges Tour and Canal Boat  - 1805441241</td></tr><tr><td>Aug 11</td><td>Travel to Amsterdam VX4PTG</td><td>NH Collection Flower Market</td><td>Canal Boat Ride 8:30 PM - 32809085</td></tr><tr><td>Aug 12</td><td>Amsterdam</td><td>NH Collection Flower Market</td><td>Anne Frank House 10:15 (paid)</td></tr><tr><td>Aug 13</td><td>KLM Flight KL1851 (Amsterdam to Munich) </td><td>Hampton by Hilton Munich City North</td><td>-</td></tr><tr><td>Aug 14</td><td>Munich</td><td>Hampton by Hilton Munich City North</td><td>-</td></tr><tr><td>Aug 15</td><td>Munich (Neuschwanstein)</td><td>Hampton by Hilton Munich City North</td><td>Neuschwanstein Castle</td></tr><tr><td>Aug 16</td><td>Train to Salzburg</td><td>Wyndham Grand Salzburg</td><td>-</td></tr><tr><td>Aug 17</td><td>Salzburg</td><td>Wyndham Grand Salzburg</td><td>Sound of Music Tour</td></tr><tr><td>Aug 18</td><td>Train Salzburg to Vienna</td><td>Hilton Vienna Waterfront</td><td>-</td></tr><tr><td>Aug 19</td><td>Vienna</td><td>Hilton Vienna Waterfront</td><td>-</td></tr><tr><td>Aug 20</td><td>Austrian Airlines Flight to Krakow  OS679 (VIE to KRK)</td><td>Hampton by Hilton Krakow</td><td>-</td></tr><tr><td>Aug 21</td><td>Krakow</td><td>Hampton by Hilton Krakow</td><td>Auschwitz-Birkenau</td></tr><tr><td>Aug 22</td><td>British Airways Flight BA873 (Krakow to London)</td><td>Hampton by Hilton London City</td><td>Viator Golf Buggy Tour 9:00 am Schindler factor tour 31774161 (paid) 12:50pm</td></tr><tr><td>Aug 23</td><td>London</td><td>Hampton by Hilton London City</td><td>Buckingham Palace State Rooms (9:30 AM) paid</td></tr><tr><td>Aug 24</td><td>London</td><td>Hampton by Hilton London City</td><td>Tower of London, paid</td></tr><tr><td>Aug 25</td><td>Virgin Atlantic Flight VS0009 (London to NYC)</td><td>-</td><td>Departure</td></tr></table></div><script src='js/app.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adler / Peterman European Vacation 2026</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+               url("images/hero-banner.jpg") center center/cover;
+    height:70vh;
+    color:white;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:1.4rem;
+}
+
+.card{
+    transition:.3s;
+    border:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.countdown{
+    background:#0d6efd;
+    color:white;
+    padding:40px;
+}
+
+footer{
+    background:#212529;
+    color:white;
+    padding:25px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+European Vacation 2026
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/london.html">London</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/brussels.html">Brussels</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/bruges.html">Bruges</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/amsterdam.html">Amsterdam</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/munich.html">Munich</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/salzburg.html">Salzburg</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/vienna.html">Vienna</a></li>
+<li class="nav-item"><a class="nav-link" href="cities/krakow.html">Kraków</a></li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Adler / Peterman Family</h1>
+
+<h2>European Vacation</h2>
+
+<p>August 8 – 25, 2026</p>
+
+<a href="#destinations" class="btn btn-warning btn-lg mt-3">
+Explore Our Journey
+</a>
+
+</div>
+
+</section>
+
+<section class="countdown text-center">
+
+<div class="container">
+
+<h2>Trip Countdown</h2>
+
+<h1 id="countdown">Loading...</h1>
+
+</div>
+
+</section>
+
+<section id="destinations" class="container my-5">
+
+<h2 class="text-center mb-5">
+Destinations
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇬🇧 London</h4>
+<p>History, theatre and royal landmarks.</p>
+<a href="cities/london.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇧🇪 Brussels</h4>
+<p>Grand Place and Belgian chocolate.</p>
+<a href="cities/brussels.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇧🇪 Bruges</h4>
+<p>Canals and medieval beauty.</p>
+<a href="cities/bruges.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇳🇱 Amsterdam</h4>
+<p>Canals, museums and bicycles.</p>
+<a href="cities/amsterdam.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇩🇪 Munich</h4>
+<p>Bavarian culture.</p>
+<a href="cities/munich.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇦🇹 Salzburg</h4>
+<p>Mozart and alpine scenery.</p>
+<a href="cities/salzburg.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇦🇹 Vienna</h4>
+<p>Imperial palaces and cafés.</p>
+<a href="cities/vienna.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<div class="card-body">
+<h4>🇵🇱 Kraków</h4>
+<p>Old Town and history.</p>
+<a href="cities/krakow.html" class="btn btn-primary">Visit</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer class="text-center">
+
+<h4>Adler / Peterman European Vacation 2026</h4>
+
+<p>Total Planned Cost: $11,018.40</p>
+
+</footer>
+
+<script>
+
+const trip=new Date("2026-08-08");
+
+function updateCountdown(){
+
+const now=new Date();
+
+const diff=trip-now;
+
+const days=Math.floor(diff/1000/60/60/24);
+
+document.getElementById("countdown").innerHTML=
+days+" days";
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,60000);
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
