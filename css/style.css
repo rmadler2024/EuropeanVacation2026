@@ -64,7 +64,7 @@ body{
     justify-content:center;
     align-items:flex-end;
 
-    padding-bottom:80px;   /* was 40px */
+    padding-bottom:120px;   /* was 40px */
     z-index:100;
 }
 .hero-overlay .btn{
