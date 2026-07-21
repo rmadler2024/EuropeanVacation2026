@@ -6,7 +6,7 @@ body {
 
 .hero {
     position: relative;
-    height: 70vh;
+    height: 45vh;
     overflow: hidden;
 
     display: flex;
