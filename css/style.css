@@ -30,16 +30,12 @@ body{
 
 .hero-button{
     position: absolute;
-    top: 260px;
+    top: 320px;
     left: 70px;
     z-index: 100;
 
-    display: inline-block !important;
-    width: auto !important;
-    height: auto !important;
-    min-height: 0 !important;
-
-    padding: 12px 24px !important;
+    display: inline-block;
+    padding: 12px 24px;
     font-size: 24px;
     line-height: 1.2;
     white-space: nowrap;
