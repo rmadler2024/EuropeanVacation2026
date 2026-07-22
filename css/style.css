@@ -17,53 +17,22 @@ body{
 /* HERO */
 
 .hero{
-    position:relative;
     width:100%;
-}
-
-.hero{
-    position:relative;
-    width:100%;
-    overflow:hidden;
-}
-
-.hero{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    text-align:center;
 }
 
 .hero-image{
-    display: block;
-    width: 100%;
-    height: 340px;          /* Desktop */
-    object-fit: cover;
-    object-position: center 15%;
+    width:100%;
+    height:auto;
+    display:block;
 }
 
-@media (max-width: 992px){
-    .hero-image{
-        height: 280px;
-    }
+.hero-button{
+    position:absolute;
+    left:70px;
+    bottom:30px;
+    z-index:10;
 }
-
-@media (max-width: 768px){
-    .hero-image{
-        height: 220px;
-    }
-}
-
-@media (max-width: 576px){
-    .hero-image{
-        height: 180px;
-    }
-}
-
-.hero-button:hover{
-    background:#1b3f70;
-    color:#ffd86b;
-    border-color:#ffd86b;
-
     box-shadow:
         0 12px 30px rgba(0,0,0,.40),
         0 0 16px rgba(255,216,107,.40);
