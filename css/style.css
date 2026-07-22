@@ -29,13 +29,12 @@ body{
 }
 
 .hero-button{
-    position:absolute;
-    left:70px;
-    top:70px;      /* Use top instead of bottom */
-    z-index:10;
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.40),
-        0 0 16px rgba(255,216,107,.40);
+    position: absolute;
+    top: 120px;          /* Place it near the top of the image */
+    left: 70px;
+    z-index: 10;
+
+    white-space: nowrap; /* Keep "Begin Journey" on one line */
 }
 /* COUNTDOWN */
 
