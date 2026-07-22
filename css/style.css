@@ -111,6 +111,9 @@ body{
     flex-direction:column;
     height:100%;
 }
+.card-body .btn{
+    margin-top:auto;
+}
 
 /* FOOTER */
 
