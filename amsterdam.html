@@ -1,3 +1,94 @@
-<!doctype html><html><head><meta charset='utf-8'><link rel='stylesheet' href='../style.css'><title>Amsterdam</title></head>
-<body><header><h1>Amsterdam</h1></header><nav><a href='../index.html'>Home</a></nav>
-<main><div class='card'><img class='hero' src='../images/amsterdam.jpg' alt='Amsterdam'><h2>Explore Amsterdam</h2><p>Add itinerary details, reservations, restaurants and photos here.</p></div></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amsterdam | European Vacation 2026</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.hero{position:relative;height:520px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;z-index:2}
+.section-title{border-left:6px solid #0d6efd;padding-left:12px;margin:40px 0 20px}
+.route{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem;font-weight:700;margin:35px 0}
+.current{background:#0d6efd;color:#fff;padding:.25rem .8rem;border-radius:999px}
+footer{background:#212529;color:#fff;padding:30px;margin-top:40px}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">European Vacation 2026</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="london.html">London</a></li>
+<li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li>
+<li class="nav-item"><a class="nav-link active" href="amsterdam.html">Amsterdam</a></li>
+<li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li>
+<li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li>
+<li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li>
+<li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li>
+</ul></div></div></nav>
+
+<header class="hero">
+<img src="images/amsterdam-hero.jpg" alt="Amsterdam Canal">
+<div class="content">
+<h1 class="display-2 fw-bold">Amsterdam</h1>
+<p class="lead">August 11–13, 2026</p>
+<span class="badge bg-warning text-dark fs-6">Canals • History • Museums</span>
+</div>
+</header>
+
+<div class="container py-5">
+<div class="route">London ➜ Brussels ➜ <span class="current">Amsterdam</span> ➜ Munich ➜ Salzburg ➜ Vienna ➜ Kraków ➜ London</div>
+
+<h2 class="section-title">Transportation</h2>
+<div class="row g-4">
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>🚆 Arrival from Brussels</h4>
+<p><strong>Aug 11</strong><br>Train <b>VX4PTG</b><br>8:53 AM → 10:50 AM</p>
+</div></div></div>
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>✈ KLM KL1851</h4>
+<p><strong>Aug 13</strong><br>Amsterdam → Munich<br>9:40 AM → 11:05 AM</p>
+</div></div></div>
+</div>
+
+<h2 class="section-title">Hotel</h2>
+<div class="card shadow">
+<div class="card-body">
+<h4>NH Collection Amsterdam Flower Market</h4>
+<p>Vijzelstraat 4, 1017 HK Amsterdam</p>
+<p>☎ +31 20 622 2266</p>
+<p>Confirmation Numbers: <b>0166504943</b> & <b>0166504944</b></p>
+</div></div>
+
+<h2 class="section-title">Reservations</h2>
+<table class="table table-bordered table-striped">
+<thead class="table-dark"><tr><th>Date</th><th>Time</th><th>Reservation</th></tr></thead>
+<tbody>
+<tr><td>Aug 11</td><td>8:30 PM</td><td>Amsterdam Evening Canal Cruise (Confirmation 32809085)</td></tr>
+<tr><td>Aug 12</td><td>10:15 AM</td><td>Anne Frank House</td></tr>
+</tbody></table>
+
+<h2 class="section-title">Suggested Sightseeing</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="card shadow h-100"><div class="card-body"><h4>🏛 Historic Amsterdam</h4><p>Dam Square, Royal Palace, Begijnhof, Jordaan.</p></div></div></div>
+<div class="col-md-4"><div class="card shadow h-100"><div class="card-body"><h4>🎨 Museums</h4><p>Anne Frank House, Rijksmuseum, Van Gogh Museum.</p></div></div></div>
+<div class="col-md-4"><div class="card shadow h-100"><div class="card-body"><h4>🌷 Canal District</h4><p>Bloemenmarkt, Nine Streets, Magere Brug and the Canal Belt.</p></div></div></div>
+</div>
+
+<h2 class="section-title">Map</h2>
+<div class="ratio ratio-16x9"><iframe src="https://www.google.com/maps?q=Amsterdam&output=embed"></iframe></div>
+
+<div class="d-flex justify-content-between my-5">
+<a class="btn btn-secondary" href="brussels.html">⬅ Brussels</a>
+<a class="btn btn-primary" href="munich.html">Munich ➜</a>
+</div>
+</div>
+
+<footer><div class="container text-center">European Vacation 2026</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
