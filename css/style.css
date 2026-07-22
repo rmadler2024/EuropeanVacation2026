@@ -21,40 +21,37 @@ body{
     width:100%;
 }
 
-.hero-image{
+.hero{
+    position:relative;
     width:100%;
-    height:550px;      /* desktop */
+    overflow:hidden;
+}
+
+.hero-image{
+    display:block;
+    width:100%;
+    height:550px;
     object-fit:cover;
     object-position:center center;
-    display:block;
 }
+
 @media (max-width:992px){
-
-.hero-image{
-    height:420px;
-}
-
+    .hero-image{
+        height:420px;
+    }
 }
 
 @media (max-width:768px){
-
-.hero-image{
-    height:320px;
-}
-
+    .hero-image{
+        height:320px;
+    }
 }
 
 @media (max-width:576px){
-
-.hero-image{
-    height:240px;
+    .hero-image{
+        height:240px;
+    }
 }
-
-}
-.hero {
-    position: relative;
-}
-
 .hero-button{
     position:absolute;
 
