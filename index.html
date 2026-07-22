@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -15,13 +16,15 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
 <div class="container">
 
 <a class="navbar-brand" href="#">
 European Vacation 2026
 </a>
 
-<button class="navbar-toggler" type="button"
+<button class="navbar-toggler"
+type="button"
 data-bs-toggle="collapse"
 data-bs-target="#menu">
 
@@ -48,14 +51,20 @@ data-bs-target="#menu">
 </div>
 
 </div>
+
 </nav>
 
 <section class="hero">
-    <img src="images/Hero_Image.png" class="hero-image" alt="European Vacation">
 
-    <a href="#destinations" class="hero-button btn btn-warning btn-lg">
-        Explore Our Journey
-    </a>
+<img src="images/Hero_Image.png"
+class="hero-image"
+alt="European Vacation">
+
+<a href="#destinations"
+class="hero-button">
+Explore Our Journey
+</a>
+
 </section>
 
 <section class="countdown">
@@ -72,39 +81,177 @@ data-bs-target="#menu">
 
 <section id="destinations" class="container py-5">
 
-<h2 class="text-center mb-5">Destinations</h2>
+<h2 class="text-center mb-5">
+Destinations
+</h2>
 
 <div class="row g-4">
 
-<div class="col-md-3">
-<div class="card p-4">
+<!-- London -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
 <h4>🇬🇧 London</h4>
-<p>History, theatre and royal landmarks.</p>
-<a href="london.html" class="btn btn-primary">Visit</a>
+
+<p>
+History, theatre and royal landmarks.
+</p>
+
+<a href="london.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="card p-4">
+<!-- Brussels -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
 <h4>🇧🇪 Brussels</h4>
-<p>Grand Place and Belgian chocolate.</p>
-<a href="brussels.html" class="btn btn-primary">Visit</a>
+
+<p>
+Grand Place and Belgian chocolate.
+</p>
+
+<a href="brussels.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="card p-4">
+<!-- Bruges -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
 <h4>🇧🇪 Bruges</h4>
-<p>Canals and medieval beauty.</p>
-<a href="bruges.html" class="btn btn-primary">Visit</a>
+
+<p>
+Canals and medieval beauty.
+</p>
+
+<a href="bruges.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
 </div>
 </div>
 
-<div class="col-md-3">
-<div class="card p-4">
+<!-- Amsterdam -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
 <h4>🇳🇱 Amsterdam</h4>
-<p>Canals and museums.</p>
-<a href="amsterdam.html" class="btn btn-primary">Visit</a>
+
+<p>
+Canals, museums and bicycles.
+</p>
+
+<a href="amsterdam.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Munich -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
+<h4>🇩🇪 Munich</h4>
+
+<p>
+Bavarian culture and beer gardens.
+</p>
+
+<a href="munich.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Salzburg -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
+<h4>🇦🇹 Salzburg</h4>
+
+<p>
+Mozart, castles and alpine scenery.
+</p>
+
+<a href="salzburg.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Vienna -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
+<h4>🇦🇹 Vienna</h4>
+
+<p>
+Imperial palaces and famous cafés.
+</p>
+
+<a href="vienna.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
+</div>
+</div>
+
+<!-- Kraków -->
+
+<div class="col-lg-3 col-md-6">
+<div class="card h-100">
+<div class="card-body">
+
+<h4>🇵🇱 Kraków</h4>
+
+<p>
+Old Town and unforgettable history.
+</p>
+
+<a href="krakow.html"
+class="btn btn-primary align-self-center px-4">
+Visit
+</a>
+
+</div>
 </div>
 </div>
 
@@ -128,9 +275,9 @@ function updateCountdown(){
 
 const now = new Date();
 
-const diff = trip-now;
+const diff = trip - now;
 
-const days = Math.floor(diff/1000/60/60/24);
+const days = Math.floor(diff / 1000 / 60 / 60 / 24);
 
 document.getElementById("countdown").innerHTML =
 days + " Days";
