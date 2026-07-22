@@ -92,29 +92,40 @@ body{
 
 /* CARDS */
 
+/* CARDS */
+
 .card{
     height:100%;
-
     border:none;
     border-radius:12px;
-
     box-shadow:0 8px 25px rgba(0,0,0,.15);
-
     transition:.25s;
 }
 
 .card:hover{
     transform:translateY(-8px);
 }
+
 .card-body{
     display:flex;
     flex-direction:column;
-    height:100%;
-}
-.card-body .btn{
-    margin-top:auto;
+    min-height:220px;      /* every card same height */
 }
 
+.card-body h4{
+    margin-bottom:15px;
+}
+
+.card-body p{
+    flex-grow:1;           /* fills available space */
+    margin-bottom:25px;
+}
+
+.card-body .btn{
+    align-self:center;
+    width:260px;
+    margin-top:auto;       /* forces all buttons to the bottom */
+}
 /* FOOTER */
 
 footer{
