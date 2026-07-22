@@ -1,27 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>London | Adler / Peterman Family European Vacation 2026</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>London | European Vacation 2026</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="css/style.css">
 <style>
-body{font-family:Arial,sans-serif;background:#f5f7fa;}
-.city-hero{position:relative;height:500px;overflow:hidden}
-.city-hero img{width:100%;height:500px;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center}
-.hero-overlay h1{font-size:4rem;font-weight:700}
-.hero-overlay p{font-size:1.4rem}
-.card{border:none;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-footer{background:#0d6efd;color:#fff;padding:30px 0;margin-top:60px}
+.hero{position:relative;height:520px;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.45);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff}
+.progress-route{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;font-weight:700}
+.progress-route .current{background:#0d6efd;color:#fff;padding:.25rem .75rem;border-radius:999px}
+.section-title{border-left:6px solid #0d6efd;padding-left:12px;margin:40px 0 20px}
+.timeline{border-left:4px solid #0d6efd;padding-left:20px}
+.timeline .event{margin-bottom:25px}
+footer{background:#212529;color:#fff;padding:30px;margin-top:40px}
 </style>
 </head>
-
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 <div class="container">
 <a class="navbar-brand" href="index.html">European Vacation 2026</a>
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
@@ -40,149 +40,106 @@ footer{background:#0d6efd;color:#fff;padding:30px 0;margin-top:60px}
 </div>
 </nav>
 
-<header class="city-hero">
-<img src="images/london-hero.jpg" alt="London Hero">
-<div class="hero-overlay">
-<h1>London</h1>
-<p>August 8–9 &bull; August 22–25, 2026</p>
+<header class="hero">
+<img src="images/london-hero.jpg" alt="London">
+<div class="overlay">
+<h1 class="display-2 fw-bold">London</h1>
+<p class="lead">August 8–9 &nbsp;•&nbsp; August 22–25, 2026</p>
+<p class="badge bg-warning text-dark fs-6">First & Last Stop of Our Journey</p>
 </div>
 </header>
 
 <div class="container py-5">
 
-<div class="row g-4 mb-5">
-<div class="col-lg-8">
-<h2>Welcome to London</h2>
-<p>Our European adventure begins in London before boarding the Eurostar to Brussels. We return after visiting seven more destinations to enjoy three unforgettable days of royal history, Beatles landmarks, World War II history and an evening in London's famous West End.</p>
+<div class="progress-route mb-5">
+<span class="current">London</span> ➜ Brussels ➜ Bruges ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ Vienna ➜ Kraków ➜ London
 </div>
 
-<div class="col-lg-4">
-<div class="card p-3">
-<h4>Trip Dashboard</h4>
-<ul>
-<li><strong>Visit #1:</strong> Aug. 8–9</li>
-<li><strong>Visit #2:</strong> Aug. 22–25</li>
-<li><strong>Hotels:</strong> 2</li>
-<li><strong>Ticketed Events:</strong> 3</li>
-<li><strong>Next Stop:</strong> Brussels</li>
-</ul>
-</div>
-</div>
+<h2 class="section-title">Transportation</h2>
+<div class="row g-4">
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>✈ Virgin Atlantic VS26</h4>
+<p><strong>Aug 8</strong><br>JFK 8:15 AM → London 8:10 PM</p>
+</div></div></div>
+
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>🚄 Eurostar</h4>
+<p><strong>Aug 9</strong><br>London 8:34 AM → Brussels 12:05 PM</p>
+</div></div></div>
+
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>✈ British Airways BA873</h4>
+<p><strong>Aug 22</strong><br>Kraków 8:20 PM → London 9:50 PM</p>
+</div></div></div>
+
+<div class="col-md-6"><div class="card shadow h-100"><div class="card-body">
+<h4>✈ Virgin Atlantic VS0009</h4>
+<p><strong>Aug 25</strong><br>
+London (LHR) → New York (JFK)<br>
+Departure: <strong>11:20 AM</strong><br>
+Arrival: <strong>2:05 PM</strong>
+</p>
+</div></div></div>
 </div>
 
-<h2>Hotels</h2>
-
-<div class="row g-4 mb-5">
-
-<div class="col-md-6">
-<div class="card p-4">
+<h2 class="section-title">Hotels</h2>
+<div class="row g-4">
+<div class="col-lg-6"><div class="card shadow h-100"><div class="card-body">
 <h4>Holiday Inn London – Bloomsbury</h4>
-<p>Coram Street<br>London WC1N 1HT</p>
-<p><strong>Phone:</strong> +44 20 7833 3900</p>
-<p><strong>Confirmation:</strong><br>#86380362<br>#86931790</p>
-</div>
-</div>
+<p>Aug 8–9<br>Coram Street, London WC1N 1HT</p>
+<p>☎ +44 20 7833 3900</p>
+<p>Confirmations: #86380362 &amp; #86931790</p>
+</div></div></div>
 
-<div class="col-md-6">
-<div class="card p-4">
+<div class="col-lg-6"><div class="card shadow h-100"><div class="card-body">
 <h4>Hampton by Hilton London City</h4>
-<p>12–20 Osborn Street<br>London E1 6TE</p>
-<p><strong>Phone:</strong> +44 20 4512 9900</p>
-<p><strong>Confirmation:</strong><br>#52883717</p>
-</div>
-</div>
-
+<p>Aug 22–25<br>12–20 Osborn St., London E1 6TE</p>
+<p>☎ +44 20 4512 9900</p>
+<p>Confirmation: #52883717</p>
+</div></div></div>
 </div>
 
-<h2>Reservations & Admissions</h2>
-
-<table class="table table-striped table-bordered">
-<thead class="table-dark">
-<tr><th>Date</th><th>Time</th><th>Activity</th><th>Status</th></tr>
-</thead>
+<h2 class="section-title">Reservations</h2>
+<table class="table table-bordered table-striped">
+<thead class="table-dark"><tr><th>Date</th><th>Time</th><th>Reservation</th></tr></thead>
 <tbody>
-<tr><td>Aug 23</td><td>9:30 AM</td><td>Buckingham Palace State Rooms</td><td>Paid</td></tr>
-<tr><td>Aug 24</td><td>TBD</td><td>Tower of London</td><td>Paid</td></tr>
-<tr><td>Aug 24</td><td>7:30 PM</td><td>Les Misérables</td><td>Paid</td></tr>
+<tr><td>Aug 23</td><td>9:30 AM</td><td>Buckingham Palace State Rooms</td></tr>
+<tr><td>Aug 24</td><td>TBD</td><td>Tower of London</td></tr>
+<tr><td>Aug 24</td><td>7:30 PM</td><td>Les Misérables (West End)</td></tr>
 </tbody>
 </table>
 
-<h2 class="mt-5">Highlights</h2>
-
-<div class="row g-4">
-
-<div class="col-md-4">
-<div class="card p-3 h-100">
-<h4>👑 Royal London</h4>
-<ul>
-<li>Buckingham Palace</li>
-<li>Big Ben</li>
-<li>Westminster Abbey</li>
-<li>St. James's Park</li>
-</ul>
-</div>
+<h2 class="section-title">Daily Timeline</h2>
+<div class="timeline">
+<div class="event"><h5>Saturday, August 23</h5><p>9:30 AM Buckingham Palace • Big Ben • Westminster Abbey • St. James's Park</p></div>
+<div class="event"><h5>Sunday, August 24</h5><p>Tower of London • Tower Bridge • Abbey Road Crossing • Churchill War Rooms • Imperial War Museum • 7:30 PM Les Misérables</p></div>
 </div>
 
-<div class="col-md-4">
-<div class="card p-3 h-100">
-<h4>🎸 Beatles London</h4>
-<ul>
-<li>Abbey Road Crossing</li>
-<li>Abbey Road Studios</li>
-<li>Beatles Photo Opportunity</li>
-</ul>
-</div>
+<div class="row g-4 mt-2">
+<div class="col-md-4"><div class="card h-100 shadow"><div class="card-body"><h4>👑 Royal London</h4><p>Buckingham Palace, Westminster Abbey, Big Ben.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100 shadow"><div class="card-body"><h4>🎸 Beatles London</h4><p>Abbey Road Crossing and Abbey Road Studios.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100 shadow"><div class="card-body"><h4>🎖 WWII London</h4><p>Churchill War Rooms and Imperial War Museum.</p></div></div></div>
 </div>
 
-<div class="col-md-4">
-<div class="card p-3 h-100">
-<h4>🎖 WWII London</h4>
-<ul>
-<li>Churchill War Rooms</li>
-<li>Imperial War Museum</li>
-</ul>
+<h2 class="section-title">Interactive Map</h2>
+<div class="ratio ratio-16x9">
+<iframe src="https://www.google.com/maps?q=London&output=embed" loading="lazy"></iframe>
 </div>
+
+<h2 class="section-title">Photo Gallery</h2>
+<div class="alert alert-info">
+Add your own photos after the trip. Suggested images: Big Ben, Buckingham Palace, Abbey Road, Tower of London, Churchill War Rooms, Les Misérables.
+</div>
+
+<div class="d-flex justify-content-between my-5">
+<a class="btn btn-secondary" href="index.html">🏠 Home</a>
+<a class="btn btn-primary" href="brussels.html">Next ➜ Brussels</a>
 </div>
 
 </div>
 
-<h2 class="mt-5">Suggested Schedule</h2>
-
-<div class="card p-4 mb-4">
-<h5>Saturday, August 23</h5>
-<ul>
-<li>9:30 AM – Buckingham Palace State Rooms</li>
-<li>Westminster Abbey</li>
-<li>Big Ben</li>
-<li>St. James's Park</li>
-</ul>
-</div>
-
-<div class="card p-4 mb-4">
-<h5>Sunday, August 24</h5>
-<ul>
-<li>Tower of London</li>
-<li>Tower Bridge</li>
-<li>Abbey Road Crossing</li>
-<li>Churchill War Rooms</li>
-<li>Imperial War Museum</li>
-<li>7:30 PM – Les Misérables</li>
-</ul>
-</div>
-
-<div class="text-center mt-5">
-<a href="brussels.html" class="btn btn-primary btn-lg">Next Stop → Brussels</a>
-</div>
-
-</div>
-
-<footer>
-<div class="container text-center">
-<p>Adler / Peterman Family European Vacation 2026</p>
-</div>
-</footer>
+<footer><div class="container text-center">Adler / Peterman Family European Vacation 2026</div></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
