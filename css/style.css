@@ -93,21 +93,23 @@ body{
 /* CARDS */
 
 .card{
+    height:100%;
 
     border:none;
-
     border-radius:12px;
-
-    transition:.25s;
 
     box-shadow:0 8px 25px rgba(0,0,0,.15);
 
+    transition:.25s;
 }
 
 .card:hover{
-
     transform:translateY(-8px);
-
+}
+.card-body{
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 /* FOOTER */
