@@ -35,19 +35,29 @@ body{
     z-index:100;
 
     display:inline-block;
+
     padding:12px 28px;
+
+    background-color:#173A63 !important;
+    color:#F5D37A !important;
+
+    border:2px solid #F5D37A !important;
+    border-radius:10px;
+
     font-size:24px;
     font-weight:600;
     line-height:1.2;
-    white-space:nowrap;
-    text-decoration:none;
 
-    background:#173A63;
-    color:#F5D37A;
-    border:2px solid #F5D37A;
-    border-radius:10px;
+    text-decoration:none;
+    white-space:nowrap;
+
     box-shadow:0 6px 18px rgba(0,0,0,.35);
-    transition:all .25s ease;
+}
+
+.hero-button:hover{
+    background-color:#24548A !important;
+    color:#FFF4C6 !important;
+    border-color:#FFF4C6 !important;
 }
 
 .hero-button:hover{
