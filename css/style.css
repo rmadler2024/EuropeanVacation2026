@@ -19,6 +19,8 @@ body{
 .hero{
     position: relative;
     width: 100%;
+    max-height: 650px;   /* Adjust between 550–700px if needed */
+    overflow: hidden;
 }
 
 .hero-image{
