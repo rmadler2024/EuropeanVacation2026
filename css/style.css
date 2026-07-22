@@ -19,14 +19,13 @@ body{
 .hero{
     position: relative;
     width: 100%;
-    max-height: 650px;   /* Adjust between 550–700px if needed */
-    overflow: hidden;
+    text-align: center;
 }
 
 .hero-image{
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .hero-button{
