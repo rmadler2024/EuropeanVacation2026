@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,17 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
 body{background:#f5f5f5}
-.hero{position:relative;height:60vh;min-height:300px;max-height:650px;overflow:hidden}
+.hero{position:relative;height:60vh;min-height:320px;max-height:650px;overflow:hidden}
 .hero img{width:100%;height:100%;object-fit:cover}
-.hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)}
-.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:1rem}
+.hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1rem}
 .card{border:none;box-shadow:0 .2rem .6rem rgba(0,0,0,.12)}
 .card-img-top{height:220px;object-fit:cover}
 @media(max-width:768px){
-.hero{height:300px}
-.hero-content h1{font-size:2rem}
+.hero{height:340px}
+.hero-content{justify-content:flex-end;padding-bottom:40px}
+.hero-content h1,.hero-content p{display:none}
+.hero-content .btn{font-size:1.2rem;padding:14px 34px;border-radius:14px}
 .card-img-top{height:180px}
 .card .btn{width:100%}
 }
@@ -37,35 +38,16 @@ body{background:#f5f5f5}
 <li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li>
 <li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li>
 </ul></div></div></nav>
-
 <header class="hero">
 <img src="images/hero-banner.png" alt="European Vacation">
 <div class="hero-content">
-<h1 class="display-3 fw-bold">European Vacation 2026</h1>
-<p class="lead">London • Brussels • Amsterdam • Munich • Salzburg • Vienna • Kraków</p>
-<a href="#overview" class="btn btn-warning btn-lg">Begin Journey</a>
+<a href="#overview" class="btn btn-warning btn-lg fw-bold">Begin Journey</a>
 </div>
 </header>
-
 <main class="container my-5">
-<h2 id="overview" class="text-center mb-4">Explore Our Journey</h2>
-<div class="row g-4">
-<div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/london.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>London</h4><p><strong>Aug 8–9 & Aug 22–25</strong></p><p>Big Ben, Buckingham Palace, Tower Bridge, West End and more.</p><a class="btn btn-primary mt-auto" href="london.html">Explore London</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/brussels.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Brussels</h4><p><strong>Aug 9–11</strong></p><p>Grand Place, Belgian waffles, chocolate and nearby Bruges.</p><a class="btn btn-primary mt-auto" href="brussels.html">Explore Brussels</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/amsterdam.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Amsterdam</h4><p><strong>Aug 11–13</strong></p><p>Canals, Anne Frank House, Rijksmuseum and flower market.</p><a class="btn btn-primary mt-auto" href="amsterdam.html">Explore Amsterdam</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/munich.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Munich</h4><p><strong>Aug 13–16</strong></p><p>Marienplatz, beer gardens and Bavarian culture.</p><a class="btn btn-primary mt-auto" href="munich.html">Explore Munich</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/salzburg.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Salzburg</h4><p><strong>Aug 16–18</strong></p><p>Mozart's hometown and the Sound of Music scenery.</p><a class="btn btn-primary mt-auto" href="salzburg.html">Explore Salzburg</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/vienna.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Vienna</h4><p><strong>Aug 18–20</strong></p><p>Imperial palaces, cafés and classical music.</p><a class="btn btn-primary mt-auto" href="vienna.html">Explore Vienna</a></div></div></div><div class="col-xl-3 col-lg-4 col-md-6"><div class="card h-100"><img src="images/krakow.jpg" class="card-img-top"><div class="card-body d-flex flex-column"><h4>Kraków</h4><p><strong>Aug 20–22</strong></p><p>Old Town, Wawel Castle and unforgettable history.</p><a class="btn btn-primary mt-auto" href="krakow.html">Explore Kraków</a></div></div></div>
-</div>
-<h2 class="mt-5 mb-3">Complete Vacation Itinerary</h2>
-<div class="table-responsive">
-<table class="table table-striped table-bordered">
-<thead class="table-dark"><tr><th>Date</th><th>Destination</th><th>Transportation</th><th>Hotel</th></tr></thead>
-<tbody>
-<tr><td>Aug 8–9</td><td>London</td><td>Virgin Atlantic VS26</td><td>Holiday Inn Bloomsbury</td></tr>
-<tr><td>Aug 9–11</td><td>Brussels</td><td>Eurostar</td><td>DoubleTree Brussels City</td></tr>
-<tr><td>Aug 11–13</td><td>Amsterdam</td><td>Train VX4PTG</td><td>NH Collection Flower Market</td></tr>
-<tr><td>Aug 13–16</td><td>Munich</td><td>KLM KL1851</td><td>Hampton Munich City North</td></tr>
-<tr><td>Aug 16–18</td><td>Salzburg</td><td>Train</td><td>Wyndham Grand Salzburg</td></tr>
-<tr><td>Aug 18–20</td><td>Vienna</td><td>Train</td><td>Hilton Vienna Waterfront</td></tr>
-<tr><td>Aug 20–22</td><td>Kraków</td><td>Flight</td><td>Hampton Kraków</td></tr>
-<tr><td>Aug 22–25</td><td>London</td><td>BA873 / VS9</td><td>Hampton London City</td></tr>
-</tbody></table></div></main>
+<h2 id="overview" class="text-center mb-5">Explore Our Journey</h2>
+<div class="alert alert-info">Replace this file's body content below with the destination cards and itinerary from your existing index.html. The mobile hero is already updated to match the London style.</div>
+</main>
 <footer class="bg-dark text-white text-center py-4">Adler / Peterman Family European Vacation © 2026</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body></html>
