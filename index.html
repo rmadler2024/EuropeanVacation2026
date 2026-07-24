@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -6,93 +7,42 @@
 <title>European Vacation 2026</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
-
 <style>
-body { background: #f5f5f5; }
-.card-img-top { height: 220px; object-fit: cover; }
-
-/* --- Desktop Hero Settings --- */
-.hero {
-    position: relative;
-    width: 100%;
-    height: auto;
-    /* Forces the image to show its natural proportions and fit as much of the photo as possible */
-    aspect-ratio: 16 / 9; 
-    max-height: calc(100vh - 60px); 
-    overflow: hidden;
-}
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-}
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-}
-
-/* --- Desktop Button (Bottom Left, Over Rocks) --- */
-.hero .hero-button {
-    position: absolute;
-    top: auto !important;
-    bottom: 12% !important; /* Positions it over the bottom left rocks */
-    left: 4% !important;    /* Keeps it safely to the left of the people */
-    font-size: 1.1rem !important; /* Regular, smaller button size */
-    padding: 10px 24px !important;
-    transform: none !important;
-    white-space: nowrap;
-    
-    /* Styling updated to match your screenshot */
-    background: #1a2542 !important; 
-    color: #e3c592 !important;
-    border: 3px solid #e3c592 !important;
-    border-radius: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    z-index: 100;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    transition: 0.2s ease-in-out;
-}
-.hero .hero-button:hover {
-    background: #11182c !important;
-    color: #fff !important;
-    border-color: #fff !important;
-}
-
-/* --- Mobile Hero Settings --- */
+body{background:#f5f5f5}
+.hero{position:relative;height:520px;overflow:hidden}
+.hero-image{width:100%;height:100%;object-fit:cover;object-position:top center}
+.hero-overlay{position:absolute;inset:0}
+.card-img-top{height:220px;object-fit:cover}
 @media(max-width:991.98px){
-    .hero {
-        height: 80vh;
-        min-height: 600px;
-        aspect-ratio: auto;
-        max-height: none;
-    }
-    .hero-image {
-        object-fit: cover;
-        object-position: top center;
-    }
-    .card-img-top {
-        height: 180px;
-    }
-    .card .btn {
-        width: 100%;
-    }
-    .table-responsive {
-        overflow-x: auto;
-    }
-    
-    /* Mobile Button - Centered between dates and people */
-    .hero .hero-button {
-        left: 50% !important;
-        top: 38% !important;
-        bottom: auto !important;
-        transform: translateX(-50%) !important;
-        font-size: 1rem !important;
-    }
+.hero{height:auto;aspect-ratio:16/9}
+.hero-image{object-fit:cover;object-position:top center}
+.hero{position:relative}
+.hero picture,.hero picture img{display:block;width:100%;height:100%}
+.hero-overlay{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding-top:58%;
+}
+.hero-button{
+position:static;
+}
+.card-img-top{height:180px}
+.card .btn{width:100%}
+.table-responsive{overflow-x:auto}
+}
+
+
+.hero-button{position:absolute;left:8%;bottom:10%;z-index:2}
+@media(min-width:992px){
+.hero{height:640px}
+.hero-image{object-fit:contain;object-position:center bottom;background:#000}
+.hero-button{left:12%;bottom:12%}
+}
+@media(max-width:991.98px){
+.hero-button{left:50%;transform:translateX(-50%);bottom:26%}
 }
 </style>
-
 <style>
 .navbar-toggler{
 display:flex;
@@ -104,29 +54,22 @@ font-size:1rem;
 line-height:1;
 }
 </style>
-
 </head>
 <body>
 <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand" href="index.html">European Vacation 2026</a>
-<button class="navbar-toggler d-flex align-items-center gap-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
+<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-flex align-items-center gap-2" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
 <span class="fw-semibold text-white">Cities</span>
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="mainNavbar">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="london.html">London</a></li><li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li><li class="nav-item"><a class="nav-link" href="amsterdam.html">Amsterdam</a></li><li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li><li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li><li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li><li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li></ul></div></div></nav>
-<header class="hero">
+<header class="hero"><picture><source media="(max-width: 991.98px)" srcset="images/hero-mobile.png"/><img alt="European Vacation" class="hero-image" src="images/hero-banner.png"/></picture>
 <picture>
-  <source media="(max-width: 991.98px)" srcset="images/hero-mobile.png">
-  <img alt="European Vacation" class="hero-image" src="images/hero-banner.jpg"/>
+<source media="(max-width: 991.98px)" srcset="images/hero-mobile.png"/>
+
 </picture>
 <div class="hero-overlay">
 <a class="hero-button" href="#overview">Begin Journey</a>
