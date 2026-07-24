@@ -6,18 +6,90 @@
 <title>European Vacation 2026</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
+
 <style>
-body{background:#f5f5f5}
-.hero{position:relative;height:520px;overflow:hidden}
-.hero-image{width:100%;height:100%;object-fit:cover;object-position:top center}
-.hero-overlay{position:absolute;inset:0}
-.card-img-top{height:220px;object-fit:cover}
+body { background: #f5f5f5; }
+.card-img-top { height: 220px; object-fit: cover; }
+
+/* --- Desktop Hero Settings --- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* Forces the image to show its natural proportions and fit as much of the photo as possible */
+    aspect-ratio: 16 / 9; 
+    max-height: calc(100vh - 60px); 
+    overflow: hidden;
+}
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+/* --- Desktop Button (Bottom Left, Over Rocks) --- */
+.hero .hero-button {
+    position: absolute;
+    top: auto !important;
+    bottom: 12% !important; /* Positions it over the bottom left rocks */
+    left: 4% !important;    /* Keeps it safely to the left of the people */
+    font-size: 1.1rem !important; /* Regular, smaller button size */
+    padding: 10px 24px !important;
+    transform: none !important;
+    white-space: nowrap;
+    
+    /* Styling updated to match your screenshot */
+    background: #1a2542 !important; 
+    color: #e3c592 !important;
+    border: 3px solid #e3c592 !important;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: 0.2s ease-in-out;
+}
+.hero .hero-button:hover {
+    background: #11182c !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+/* --- Mobile Hero Settings --- */
 @media(max-width:991.98px){
-.hero{height:auto;aspect-ratio:auto} 
-.hero-image{object-fit:cover;object-position:top center}
-.card-img-top{height:180px}
-.card .btn{width:100%}
-.table-responsive{overflow-x:auto}
+    .hero {
+        height: 80vh;
+        min-height: 600px;
+        aspect-ratio: auto;
+        max-height: none;
+    }
+    .hero-image {
+        object-fit: cover;
+        object-position: top center;
+    }
+    .card-img-top {
+        height: 180px;
+    }
+    .card .btn {
+        width: 100%;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    /* Mobile Button - Centered between dates and people */
+    .hero .hero-button {
+        left: 50% !important;
+        top: 38% !important;
+        bottom: auto !important;
+        transform: translateX(-50%) !important;
+        font-size: 1rem !important;
+    }
 }
 </style>
 
