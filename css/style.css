@@ -52,16 +52,16 @@ position:absolute;
 inset:0;
 }
 
-\.hero-button{
+.hero-button{
 position:absolute;
 left:70px;
 top:390px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#6E4EAD !important;
-color:#EBAB6F !important;
-border:3px solid #EBAB6F !important;
+background:#173A63 !important;
+color:#F5D37A !important;
+border:3px solid #F5D37A !important;
 border-radius:12px;
 font-size:24px;
 font-weight:700;
@@ -71,9 +71,9 @@ box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-background:#5A3F95 !important;
-color:#F3BE87 !important;
-border-color:#F3BE87 !important;
+background:#1E4B7E !important;
+color:#F5D37A !important;
+border-color:#F5D37A !important;
 }
 
 .countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
@@ -113,28 +113,4 @@ font-size:1rem;
 padding:10px 20px;
 }
 .card .btn{width:100%;}
-}
-
-
-/* Final button override */
-.hero-button{
-    position:absolute !important;
-    left:70px !important;
-    bottom:70px !important;
-    top:auto !important;
-    right:auto !important;
-    display:inline-block !important;
-    padding:14px 30px !important;
-    background:#173A63 !important;
-    color:#F5D37A !important;
-    border:2px solid #F5D37A !important;
-    border-radius:10px !important;
-    text-decoration:none !important;
-    font-weight:700 !important;
-    z-index:1000 !important;
-}
-.hero-button:hover{
-    background:#1E4B7E !important;
-    color:#F5D37A !important;
-    border-color:#F5D37A !important;
 }
