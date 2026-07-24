@@ -21,6 +21,32 @@ body{background:#f5f5f5}
 .table-responsive{overflow-x:auto}
 }
 </style>
+
+<style>
+@media (min-width:992px){
+.navbar>.container{flex-wrap:nowrap;}
+.navbar-brand{
+font-size:1.15rem !important;
+font-weight:600;
+margin-right:1rem;
+flex-shrink:0;
+}
+.navbar-collapse{
+display:flex !important;
+flex-basis:auto !important;
+}
+.navbar-nav{
+margin-left:auto;
+flex-wrap:nowrap;
+}
+.navbar-nav .nav-link{
+padding-left:.55rem;
+padding-right:.55rem;
+font-size:.95rem;
+}
+}
+</style>
+
 </head>
 <body>
 <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
