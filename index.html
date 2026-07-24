@@ -23,27 +23,14 @@ body{background:#f5f5f5}
 </style>
 
 <style>
-@media (min-width:992px){
-.navbar>.container{flex-wrap:nowrap;}
-.navbar-brand{
-font-size:1.15rem !important;
-font-weight:600;
-margin-right:1rem;
-flex-shrink:0;
+.navbar-toggler{
+display:flex;
+align-items:center;
+gap:.5rem;
 }
-.navbar-collapse{
-display:flex !important;
-flex-basis:auto !important;
-}
-.navbar-nav{
-margin-left:auto;
-flex-wrap:nowrap;
-}
-.navbar-nav .nav-link{
-padding-left:.55rem;
-padding-right:.55rem;
-font-size:.95rem;
-}
+.navbar-toggler .fw-semibold{
+font-size:1rem;
+line-height:1;
 }
 </style>
 
@@ -52,7 +39,14 @@ font-size:.95rem;
 <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand" href="index.html">European Vacation 2026</a>
-<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+<button class="navbar-toggler d-flex align-items-center gap-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+<span class="fw-semibold text-white">Cities</span>
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="mainNavbar">
