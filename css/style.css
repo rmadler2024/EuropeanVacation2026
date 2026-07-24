@@ -59,9 +59,9 @@ top:390px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#173A63 !important;
-color:#F5D37A !important;
-border:3px solid #F5D37A !important;
+background:#07244D !important;
+color:#F1C88F !important;
+border:3px solid #F1C88F !important;
 border-radius:12px;
 font-size:24px;
 font-weight:700;
@@ -71,9 +71,9 @@ box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-background:#1E4B7E !important;
-color:#F5D37A !important;
-border-color:#F5D37A !important;
+background:#0A2E60 !important;
+color:#F1C88F !important;
+border-color:#F1C88F !important;
 }
 
 .countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
