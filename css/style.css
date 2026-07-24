@@ -14,9 +14,6 @@ white-space:nowrap;
 }
 
 @media (min-width:992px){
-.navbar-toggler{display:none!important;}
-.navbar-collapse{display:flex!important;visibility:visible!important;}
-
 .navbar-nav{
 display:flex;
 flex-wrap:nowrap;
@@ -55,28 +52,28 @@ position:absolute;
 inset:0;
 }
 
-.hero-button{
+\.hero-button{
 position:absolute;
 left:70px;
 top:390px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#173A63!important;
-color:#F5D37A!important;
-border:2px solid #F5D37A!important;
-border-radius:10px;
+background:#6E4EAD !important;
+color:#EBAB6F !important;
+border:3px solid #EBAB6F !important;
+border-radius:12px;
 font-size:24px;
-font-weight:600;
+font-weight:700;
 text-decoration:none;
 white-space:nowrap;
 box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-background:#24548A!important;
-color:#FFF4C6!important;
-border-color:#FFF4C6!important;
+background:#5A3F95 !important;
+color:#F3BE87 !important;
+border-color:#F3BE87 !important;
 }
 
 .countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
