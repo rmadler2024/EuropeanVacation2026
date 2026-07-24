@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>European Vacation 2026</title>
-<link href="css/style.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 <style>
 body{background:#f5f5f5}
 .hero{position:relative;height:520px;overflow:hidden}
 .hero-image{width:100%;height:100%;object-fit:cover;object-position:top center}
 .hero-overlay{position:absolute;inset:0}
-.hero-button{position:absolute;left:5%;top:69%;background:#1f63ff;color:#F5D37A;border:3px solid #F5D37A;border-radius:14px;padding:12px 26px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.hero-button{position:absolute;left:5%;top:69%;background:#0D6EFD;color:#F5D37A;border:3px solid #F5D37A;border-radius:14px;padding:12px 26px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.35);transition:all .25s ease}
 .card-img-top{height:220px;object-fit:cover}
 @media(max-width:991.98px){
 .hero{height:auto;aspect-ratio:16/9}
@@ -23,108 +25,137 @@ body{background:#f5f5f5}
 .table-responsive{overflow-x:auto}
 }
 </style>
+
+
+<style>
+.hero-button:hover{
+background:#0B5ED7;
+color:#FFF2C2;
+border-color:#FFF2C2;
+}
+</style>
+
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 <div class="container">
 <a class="navbar-brand" href="index.html">European Vacation 2026</a>
-<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="mainNavbar">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="london.html">London</a></li><li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li><li class="nav-item"><a class="nav-link" href="amsterdam.html">Amsterdam</a></li><li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li><li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li><li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li><li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li></ul></div></div></nav>
+<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="london.html">London</a></li><li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li><li class="nav-item"><a class="nav-link" href="amsterdam.html">Amsterdam</a></li><li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li><li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li><li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li><li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li></ul></div></div></nav>
+
+
 <header class="hero">
-<img alt="European Vacation" class="hero-image" src="images/hero-banner.png"/>
+<img src="images/hero-banner.png" alt="European Vacation" class="hero-image">
 <div class="hero-overlay">
-<a class="hero-button" href="#overview">Begin Journey</a>
+<a href="#overview" class="hero-button">Begin Journey</a>
 </div>
 </header>
+
+
 <main class="container my-5">
-<section class="my-5" id="overview">
+
+<section id="overview" class="my-5">
+
 <h2 class="text-center mb-5">Explore Our Journey</h2>
+
 <div class="row g-4">
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="London" class="card-img-top" src="images/london.jpg"/>
-<div class="card-body">
-<h4>London</h4>
-<p><strong>Aug 8–9 &amp; Aug 22–25</strong></p>
-<p>Big Ben, Buckingham Palace, Tower Bridge, West End and more.</p>
-<a class="btn btn-primary" href="london.html">Explore London</a>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/london.jpg" class="card-img-top" alt="London">
+            <div class="card-body">
+                <h4>London</h4>
+                <p><strong>Aug 8–9 & Aug 22–25</strong></p>
+                <p>Big Ben, Buckingham Palace, Tower Bridge, West End and more.</p>
+                <a href="london.html" class="btn btn-primary">Explore London</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/brussels.jpg" class="card-img-top" alt="Brussels">
+            <div class="card-body">
+                <h4>Brussels</h4>
+                <p><strong>Aug 9–11</strong></p>
+                <p>Grand Place, Belgian waffles, chocolate and nearby Bruges.</p>
+                <a href="brussels.html" class="btn btn-primary">Explore Brussels</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/amsterdam.jpg" class="card-img-top" alt="Amsterdam">
+            <div class="card-body">
+                <h4>Amsterdam</h4>
+                <p><strong>Aug 11–13</strong></p>
+                <p>Canals, Anne Frank House, Rijksmuseum and flower market.</p>
+                <a href="amsterdam.html" class="btn btn-primary">Explore Amsterdam</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/munich.jpg" class="card-img-top" alt="Munich">
+            <div class="card-body">
+                <h4>Munich</h4>
+                <p><strong>Aug 13–16</strong></p>
+                <p>Marienplatz, beer gardens and Bavarian culture.</p>
+                <a href="munich.html" class="btn btn-primary">Explore Munich</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/salzburg.jpg" class="card-img-top" alt="Salzburg">
+            <div class="card-body">
+                <h4>Salzburg</h4>
+                <p><strong>Aug 16–18</strong></p>
+                <p>Mozart's hometown and the Sound of Music scenery.</p>
+                <a href="salzburg.html" class="btn btn-primary">Explore Salzburg</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/vienna.jpg" class="card-img-top" alt="Vienna">
+            <div class="card-body">
+                <h4>Vienna</h4>
+                <p><strong>Aug 18–20</strong></p>
+                <p>Imperial palaces, cafés and classical music.</p>
+                <a href="vienna.html" class="btn btn-primary">Explore Vienna</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+            <img src="images/krakow.jpg" class="card-img-top" alt="Kraków">
+            <div class="card-body">
+                <h4>Kraków</h4>
+                <p><strong>Aug 20–22</strong></p>
+                <p>Old Town, Wawel Castle and unforgettable history.</p>
+                <a href="krakow.html" class="btn btn-primary">Explore Kraków</a>
+            </div>
+        </div>
+    </div>
+
 </div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Brussels" class="card-img-top" src="images/brussels.jpg"/>
-<div class="card-body">
-<h4>Brussels</h4>
-<p><strong>Aug 9–11</strong></p>
-<p>Grand Place, Belgian waffles, chocolate and nearby Bruges.</p>
-<a class="btn btn-primary" href="brussels.html">Explore Brussels</a>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Amsterdam" class="card-img-top" src="images/amsterdam.jpg"/>
-<div class="card-body">
-<h4>Amsterdam</h4>
-<p><strong>Aug 11–13</strong></p>
-<p>Canals, Anne Frank House, Rijksmuseum and flower market.</p>
-<a class="btn btn-primary" href="amsterdam.html">Explore Amsterdam</a>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Munich" class="card-img-top" src="images/munich.jpg"/>
-<div class="card-body">
-<h4>Munich</h4>
-<p><strong>Aug 13–16</strong></p>
-<p>Marienplatz, beer gardens and Bavarian culture.</p>
-<a class="btn btn-primary" href="munich.html">Explore Munich</a>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Salzburg" class="card-img-top" src="images/salzburg.jpg"/>
-<div class="card-body">
-<h4>Salzburg</h4>
-<p><strong>Aug 16–18</strong></p>
-<p>Mozart's hometown and the Sound of Music scenery.</p>
-<a class="btn btn-primary" href="salzburg.html">Explore Salzburg</a>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Vienna" class="card-img-top" src="images/vienna.jpg"/>
-<div class="card-body">
-<h4>Vienna</h4>
-<p><strong>Aug 18–20</strong></p>
-<p>Imperial palaces, cafés and classical music.</p>
-<a class="btn btn-primary" href="vienna.html">Explore Vienna</a>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="card h-100">
-<img alt="Kraków" class="card-img-top" src="images/krakow.jpg"/>
-<div class="card-body">
-<h4>Kraków</h4>
-<p><strong>Aug 20–22</strong></p>
-<p>Old Town, Wawel Castle and unforgettable history.</p>
-<a class="btn btn-primary" href="krakow.html">Explore Kraków</a>
-</div>
-</div>
-</div>
-</div>
+
 </section>
+
 <section class="mt-5">
 <h2>Complete Vacation Itinerary</h2>
+
 <div class="itinerary-wrap table-responsive">
 <table class="table table-striped table-bordered">
 <thead class="table-dark">
@@ -142,12 +173,16 @@ body{background:#f5f5f5}
 </tbody>
 </table>
 </div>
+
 </section>
+
 </main>
+
 <footer class="bg-dark text-white text-center py-4">
 Adler / Peterman Family European Vacation © 2026
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
