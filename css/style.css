@@ -100,9 +100,22 @@ padding:30px;
 
 @media (max-width:991.98px){
 .hero{
-height:82vh;
+height:72vh;
+min-height:620px;
 aspect-ratio:auto;
-min-height:700px;
+}
+.hero-image{
+object-fit:cover;
+object-position:50% 0%;
+}
+.hero-button{
+left:5%;
+top:auto;
+bottom:40px;
+font-size:1rem;
+padding:10px 20px;
+}
+.card .btn{width:100%;}
 }
 .hero-image{
 object-fit:cover;
