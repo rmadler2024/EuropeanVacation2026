@@ -1,173 +1,116 @@
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
-    margin:0;
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f5f5;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f5f5;
 }
-
-/* ---------- NAVBAR ---------- */
 
 .navbar-brand{
-    font-size:1.5rem;
-    font-weight:600;
-    color:#fff !important;
-    white-space:nowrap;
+font-size:1.5rem;
+font-weight:600;
+color:#fff!important;
+white-space:nowrap;
 }
 
+@media (min-width:992px){
 .navbar-nav{
-    flex-wrap:nowrap;
+display:flex;
+flex-wrap:nowrap;
+align-items:center;
+}
 }
 
 .navbar-nav .nav-link{
-    color:#d0d0d0 !important;
-    margin-left:8px;
-    font-size:1rem;
-    white-space:nowrap;
+color:#d0d0d0!important;
+margin-left:8px;
+font-size:1rem;
+white-space:nowrap;
 }
 
-.navbar-nav .nav-link:hover{
-    color:#ffffff !important;
-}
-
-.navbar-nav .nav-link.active{
-    color:#F5D37A !important;
-    font-weight:700;
-}
-
-/* ---------- HERO ---------- */
+.navbar-nav .nav-link:hover{color:#fff!important;}
+.navbar-nav .nav-link.active{color:#F5D37A!important;font-weight:700;}
 
 .hero{
-    position:relative;
-    height:520px;
-}
-
-/* ...rest of your CSS... */
-
-
-/* HERO */
-
-.hero{
-    position: relative;
-    width: 100%;
-    text-align: center;
+position:relative;
+height:520px;
+width:100%;
+overflow:hidden;
+text-align:center;
 }
 
 .hero-image{
-    display: block;
-    width: 100%;
-    height: auto;
+display:block;
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:top center;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
 }
 
 .hero-button{
-    position:absolute;
-    top:390px;
-    left:70px;
-    z-index:100;
-
-    display:inline-block;
-
-    padding:12px 28px;
-
-    background-color:#173A63 !important;
-    color:#F5D37A !important;
-
-    border:2px solid #F5D37A !important;
-    border-radius:10px;
-
-    font-size:24px;
-    font-weight:600;
-    line-height:1.2;
-
-    text-decoration:none;
-    white-space:nowrap;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.35);
+position:absolute;
+left:70px;
+top:390px;
+z-index:100;
+display:inline-block;
+padding:12px 28px;
+background:#173A63!important;
+color:#F5D37A!important;
+border:2px solid #F5D37A!important;
+border-radius:10px;
+font-size:24px;
+font-weight:600;
+text-decoration:none;
+white-space:nowrap;
+box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-    background-color:#24548A !important;
-    color:#FFF4C6 !important;
-    border-color:#FFF4C6 !important;
+background:#24548A!important;
+color:#FFF4C6!important;
+border-color:#FFF4C6!important;
 }
 
-.hero-button:hover{
-    background:#1F4B80;
-    color:#FFF2C4;
-    border-color:#FFF2C4;
-}
-
-.hero-button:hover{
-    background:#1F4B80;
-    color:#FFF2C4;
-    border-color:#FFF2C4;
-}
-/* COUNTDOWN */
-
-.countdown{
-
-    background:#0d6efd;
-
-    color:white;
-
-    padding:50px 20px;
-
-}
-
-.countdown h1{
-
-    font-size:3rem;
-
-}
-
-/* CARDS */
-
-/* CARDS */
+.countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
+.countdown h1{font-size:3rem;}
 
 .card{
-    height:100%;
-    border:none;
-    border-radius:12px;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-    transition:.25s;
+height:100%;
+border:none;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+transition:.25s;
 }
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card-body{
-    display:flex;
-    flex-direction:column;
-    min-height:220px;      /* every card same height */
-}
-
-.card-body h4{
-    margin-bottom:15px;
-}
-
-.card-body p{
-    flex-grow:1;           /* fills available space */
-    margin-bottom:25px;
-}
-
-.card-body .btn{
-    align-self:center;
-    width:260px;
-    margin-top:auto;       /* forces all buttons to the bottom */
-}
-/* FOOTER */
+.card:hover{transform:translateY(-8px);}
+.card-body{display:flex;flex-direction:column;min-height:220px;}
+.card-body p{flex-grow:1;margin-bottom:25px;}
+.card-body .btn{align-self:center;width:260px;margin-top:auto;}
 
 footer{
+background:#212529;
+color:#fff;
+text-align:center;
+padding:30px;
+}
 
-    background:#212529;
-
-    color:white;
-
-    text-align:center;
-
-    padding:30px;
-
+@media (max-width:991.98px){
+.hero{
+height:auto;
+aspect-ratio:16/9;
+}
+.hero-image{
+object-fit:contain;
+}
+.hero-button{
+left:5%;
+top:66%;
+font-size:1rem;
+padding:10px 20px;
+}
+.card .btn{width:100%;}
 }
