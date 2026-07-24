@@ -42,6 +42,66 @@ position:static;
 @media(max-width:991.98px){
 .hero-button{left:50%;transform:translateX(-50%);bottom:26%}
 }
+
+
+
+/* ===== Hero overrides ===== */
+.hero{position:relative;overflow:hidden}
+.hero-overlay{position:absolute;inset:0}
+
+@media (min-width:992px){
+  .hero{
+    height:700px;
+  }
+  .hero picture,
+  .hero picture img{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .hero-image{
+    object-fit:cover;
+    object-position:center top;
+    background:none;
+  }
+  .hero-overlay{
+    position:absolute;
+    inset:0;
+  }
+  .hero-button{
+    position:absolute;
+    left:5%;
+    bottom:8%;
+    transform:none;
+  }
+}
+
+@media (max-width:991.98px){
+  .hero{
+    height:auto;
+    aspect-ratio:16/9;
+  }
+  .hero picture,
+  .hero picture img{
+    width:100%;
+    height:100%;
+    display:block;
+  }
+  .hero-image{
+    object-fit:cover;
+    object-position:top center;
+  }
+  .hero-overlay{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:58%;
+  }
+  .hero-button{
+    position:static;
+    transform:none;
+  }
+}
 </style>
 <style>
 .navbar-toggler{
@@ -67,10 +127,7 @@ line-height:1;
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="london.html">London</a></li><li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li><li class="nav-item"><a class="nav-link" href="amsterdam.html">Amsterdam</a></li><li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li><li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li><li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li><li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li></ul></div></div></nav>
 <header class="hero"><picture><source media="(max-width: 991.98px)" srcset="images/hero-mobile.png"/><img alt="European Vacation" class="hero-image" src="images/hero-banner.png"/></picture>
-<picture>
-<source media="(max-width: 991.98px)" srcset="images/hero-mobile.png"/>
 
-</picture>
 <div class="hero-overlay">
 <a class="hero-button" href="#overview">Begin Journey</a>
 </div>
