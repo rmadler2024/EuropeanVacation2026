@@ -7,17 +7,27 @@ background:#f5f5f5;
 }
 
 .navbar-brand{
-font-size:1.5rem;
+font-size:1.25rem;
 font-weight:600;
 color:#fff!important;
 white-space:nowrap;
+flex-shrink:0;
 }
 
 @media (min-width:992px){
+.navbar-brand{
+font-size:1.15rem;
+}
 .navbar-nav{
 display:flex;
 flex-wrap:nowrap;
 align-items:center;
+margin-left:auto;
+}
+.navbar-nav .nav-link{
+padding-left:.65rem;
+padding-right:.65rem;
+font-size:1rem;
 }
 }
 
@@ -59,7 +69,7 @@ top:390px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#07244D !important;
+background:#07244B !important;
 color:#F1C88F !important;
 border:3px solid #F1C88F !important;
 border-radius:12px;
@@ -71,7 +81,7 @@ box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-background:#0A2E60 !important;
+background:#0A2C58 !important;
 color:#F1C88F !important;
 border-color:#F1C88F !important;
 }
