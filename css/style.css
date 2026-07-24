@@ -59,7 +59,7 @@ top:390px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#163A6B !important;
+background:#0A264D !important;
 color:#F2C98A !important;
 border:3px solid #F2C98A !important;
 border-radius:12px;
@@ -71,7 +71,7 @@ box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 
 .hero-button:hover{
-background:#1A467F !important;
+background:#12335E !important;
 color:#F2C98A !important;
 border-color:#F2C98A !important;
 }
