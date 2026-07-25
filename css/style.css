@@ -98,20 +98,13 @@ aspect-ratio:16/9;
 object-fit:cover;
 }
 .hero-button{
-position:absolute;
 left:50%;
 top:38%;
 bottom:auto;
 transform:translate(-50%,-50%);
 padding:10px 22px;
 min-width:180px;
-background:#1D2D63!important;
-color:#F5D37A!important;
-border:none;
-border-radius:8px;
 font-size:18px;
-font-weight:700;
-text-decoration:none;
 }
 .card .btn{width:100%;}
 }
