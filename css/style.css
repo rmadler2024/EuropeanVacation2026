@@ -52,7 +52,7 @@ height:auto;
 .hero-button{
 position:absolute;
 left:70px;
-bottom:70px;
+bottom:15%;
 padding:8px 18px;
 min-width:150px;
 background:#1D2D63!important;
