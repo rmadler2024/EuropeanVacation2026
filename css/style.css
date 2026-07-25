@@ -1,3 +1,6 @@
+body{
+    background:red !important;
+}
 .hero-button{
 position:relative;
 display:inline-block;
