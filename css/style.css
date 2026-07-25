@@ -100,7 +100,7 @@ object-fit:cover;
 .hero-button{
 position:absolute;
 left:50%;
-top:46%;
+top:38%;
 bottom:auto;
 transform:translateX(-50%);
 padding:10px 22px;
