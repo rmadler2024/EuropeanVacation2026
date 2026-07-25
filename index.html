@@ -9,74 +9,11 @@
 <link href="css/style.css" rel="stylesheet"/>
 <style>
 body{background:#f5f5f5}
-.hero{position:relative;overflow:hidden}
-.hero-overlay{position:absolute;inset:0}
 .card-img-top{height:220px;object-fit:cover}
-.hero-button{position:absolute;z-index:5}
-
-@media (min-width:992px){
-  .hero{
-    width:100%;
-    aspect-ratio:16/9;
-    height:auto;
-    max-height:760px;
-    background:#000;
-  }
-  .hero picture,
-  .hero picture img{
-    display:block;
-    width:100%;
-    height:100%;
-  }
-  .hero-image{
-    object-fit:contain;
-    object-position:center center;
-    background:#000;
-  }
-  .hero-button{
-    left:6%;
-    bottom:8%;
-    transform:none;
-  }
-}
-
-@media (max-width:991.98px){
-  .hero{
-    aspect-ratio:16/9;
-    height:auto;
-  }
-  .hero picture,.hero picture img{
-    display:block;
-    width:100%;
-    height:100%;
-  }
-  .hero-image{
-    object-fit:cover;
-    object-position:top center;
-  }
-  .hero-overlay{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding-top:58%;
-  }
-  .hero-button{
-    position:static;
-  }
-  .card-img-top{height:180px}
-  .card .btn{width:100%}
-  .table-responsive{overflow-x:auto}
-}
-</style>
-<style>
-.navbar-toggler{
-display:flex;
-align-items:center;
-gap:.5rem;
-}
-.navbar-toggler .fw-semibold{
-font-size:1rem;
-line-height:1;
+@media(max-width:991.98px){
+.card-img-top{height:180px}
+.card .btn{width:100%}
+.table-responsive{overflow-x:auto}
 }
 </style>
 </head>
@@ -84,15 +21,15 @@ line-height:1;
 <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
 <div class="container">
 <a class="navbar-brand" href="index.html">European Vacation 2026</a>
-<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-flex align-items-center gap-2" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
-<span class="fw-semibold text-white">Cities</span>
+<button aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="mainNavbar">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="london.html">London</a></li><li class="nav-item"><a class="nav-link" href="brussels.html">Brussels</a></li><li class="nav-item"><a class="nav-link" href="amsterdam.html">Amsterdam</a></li><li class="nav-item"><a class="nav-link" href="munich.html">Munich</a></li><li class="nav-item"><a class="nav-link" href="salzburg.html">Salzburg</a></li><li class="nav-item"><a class="nav-link" href="vienna.html">Vienna</a></li><li class="nav-item"><a class="nav-link" href="krakow.html">Kraków</a></li></ul></div></div></nav>
-<header class="hero"><picture><source media="(max-width: 991.98px)" srcset="images/hero-mobile.png"/><img alt="European Vacation" class="hero-image" src="images/hero-banner.png"/></picture>
-<div class="hero-overlay">
+<header class="hero">
+<img alt="European Vacation" class="hero-image" src="images/hero-banner.png"/>
+<div class="hero-overlay d-flex justify-content-center align-items-center">
 <a class="hero-button" href="#overview">Begin Journey</a>
 </div>
 </header>
