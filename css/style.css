@@ -1,40 +1,15 @@
 .hero-button{
-    position:absolute;
-    left:70px;
-    bottom:70px;
-    z-index:100;
-
-    display:inline-block;
-    padding:12px 28px;
-    min-width:220px;
-
-    background:#1D2D63 !important;
-    color:#F5D37A !important;
-    border:0;
-    border-radius:10px;
-
-    font-size:22px;
-    font-weight:700;
-    text-align:center;
-    text-decoration:none;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
-
-.hero-button:hover{
-    background:#243B7D !important;
-    color:#F5D37A !important;
-}
-
-@media (max-width:991.98px){
-    .hero-button{
-        left:50%;
-        transform:translateX(-50%);
-        bottom:27%;
-        min-width:180px;
-        font-size:18px;
-        padding:10px 22px;
-    }
+position:relative;
+display:inline-block;
+padding:14px 32px;
+background:#6E4EAD !important;
+color:#EBAB6F !important;
+border:3px solid #EBAB6F !important;
+border-radius:12px;
+font-size:24px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
 html{scroll-behavior:smooth;}
 
@@ -70,37 +45,43 @@ white-space:nowrap;
 .navbar-nav .nav-link.active{color:#F5D37A!important;font-weight:700;}
 
 
+
 .hero{
 position:relative;
 width:100%;
-height:auto;
-overflow:visible;
-text-align:center;
+aspect-ratio:16/9;
+overflow:hidden;
+background:#000;
 }
-.hero-image{
+.hero picture,.hero picture img{
 display:block;
 width:100%;
-height:auto;
-object-fit:unset;
+height:100%;
+}
+.hero-image{
+width:100%;
+height:100%;
+object-fit:contain;
+object-position:center center;
 }
 .hero-overlay{position:absolute;inset:0;}
 .hero-button{
 position:absolute;
 left:70px;
 bottom:70px;
-z-index:100;
-display:inline-block;
-padding:12px 28px;
-background:#6E4EAD!important;
-color:#EBAB6F!important;
-border:3px solid #EBAB6F!important;
-border-radius:12px;
-font-size:24px;
+padding:8px 18px;
+min-width:150px;
+background:#1D2D63!important;
+color:#F5D37A!important;
+border:none;
+border-radius:8px;
+font-size:16px;
 font-weight:700;
 text-decoration:none;
 }
 .hero-button:hover{
-background:#5A3F95!important;
+background:#243B7D!important;
+color:#F5D37A!important;
 }
 .countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
 .countdown h1{font-size:3rem;}
@@ -133,10 +114,15 @@ aspect-ratio:16/9;
 object-fit:cover;
 }
 .hero-button{
-left:5%;
-top:66%;
-font-size:1rem;
-padding:10px 20px;
+left:50%;
+transform:translateX(-50%);
+bottom:27%;
+top:auto;
+min-width:150px;
+padding:8px 18px;
+font-size:16px;
+font-weight:700;
+border-radius:8px;
 }
 .card .btn{width:100%;}
 }
