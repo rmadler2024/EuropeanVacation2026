@@ -53,18 +53,13 @@ height:auto;
 overflow:visible;
 background:none;
 }
+
 .hero picture,
-.hero picture img{
-display:block;
-width:100%;
-height:auto;
-}
+.hero picture img,
 .hero-image{
 display:block;
 width:100%;
 height:auto;
-object-fit:unset;
-object-position:center center;
 }
 .hero-overlay{position:absolute;inset:0;}
 .hero-button{
