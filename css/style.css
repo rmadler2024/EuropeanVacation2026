@@ -1,3 +1,16 @@
+.hero-button{
+position:relative;
+display:inline-block;
+padding:14px 32px;
+background:#6E4EAD !important;
+color:#EBAB6F !important;
+border:3px solid #EBAB6F !important;
+border-radius:12px;
+font-size:24px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 6px 18px rgba(0,0,0,.35);
+}
 html{scroll-behavior:smooth;}
 
 body{
@@ -31,51 +44,39 @@ white-space:nowrap;
 .navbar-nav .nav-link:hover{color:#fff!important;}
 .navbar-nav .nav-link.active{color:#F5D37A!important;font-weight:700;}
 
+
 .hero{
 position:relative;
-height:520px;
 width:100%;
-overflow:hidden;
+height:auto;
+overflow:visible;
 text-align:center;
 }
-
 .hero-image{
 display:block;
 width:100%;
-height:100%;
-object-fit:cover;
-object-position:top center;
+height:auto;
+object-fit:unset;
 }
-
-.hero-overlay{
-position:absolute;
-inset:0;
-}
-
+.hero-overlay{position:absolute;inset:0;}
 .hero-button{
 position:absolute;
 left:70px;
-top:390px;
+bottom:70px;
 z-index:100;
 display:inline-block;
 padding:12px 28px;
-background:#6E4EAD !important;
-color:#EBAB6F !important;
-border:3px solid #EBAB6F !important;
+background:#6E4EAD!important;
+color:#EBAB6F!important;
+border:3px solid #EBAB6F!important;
 border-radius:12px;
 font-size:24px;
 font-weight:700;
 text-decoration:none;
-white-space:nowrap;
-box-shadow:0 6px 18px rgba(0,0,0,.35);
 }
-
 .hero-button:hover{
-background:#5A3F95 !important;
-color:#F3BE87 !important;
-border-color:#F3BE87 !important;
+background:#5A3F95!important;
 }
-
 .countdown{background:#0d6efd;color:#fff;padding:50px 20px;}
 .countdown h1{font-size:3rem;}
 
@@ -100,35 +101,8 @@ padding:30px;
 
 @media (max-width:991.98px){
 .hero{
-height:72vh;
-min-height:620px;
-aspect-ratio:auto;
-}
-.hero-image{
-object-fit:cover;
-object-position:50% 0%;
-}
-.hero-button{
-left:5%;
-top:auto;
-bottom:40px;
-font-size:1rem;
-padding:10px 20px;
-}
-.card .btn{width:100%;}
-}
-.hero-image{
-object-fit:cover;
-object-position:top center;
-}
-.hero-button{
-left:5%;
-top:auto;
-bottom:110px;
-font-size:1rem;
-padding:10px 20px;
-}
-.card .btn{width:100%;}
+height:auto;
+aspect-ratio:16/9;
 }
 .hero-image{
 object-fit:cover;
