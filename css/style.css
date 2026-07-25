@@ -1,16 +1,3 @@
-.hero-button{
-position:relative;
-display:inline-block;
-padding:14px 32px;
-background:#6E4EAD !important;
-color:#EBAB6F !important;
-border:3px solid #EBAB6F !important;
-border-radius:12px;
-font-size:24px;
-font-weight:700;
-text-decoration:none;
-box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
 html{scroll-behavior:smooth;}
 
 body{
