@@ -1,9 +1,166 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Brussels</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/><style>.hero{position:relative;height:520px}.hero img{width:100%;height:100%;object-fit:cover}.hero:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.45)}.hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff}.section-title{border-left:6px solid #0d6efd;padding-left:12px;margin:40px 0 20px}.route{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;font-weight:700;margin:40px 0}.current{background:#0d6efd;color:#fff;padding:.3rem .8rem;border-radius:999px}footer{background:#212529;color:#fff;padding:30px;margin-top:50px}</style></head><body><nav class="navbar navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html" style="font-size:1rem!important;letter-spacing:-0.3px;">
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>Brussels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Leaflet CSS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        .hero{position:relative;height:520px}
+        .hero img{width:100%;height:100%;object-fit:cover}
+        .hero:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.45)}
+        .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff}
+        .section-title{border-left:6px solid #0d6efd;padding-left:12px;margin:40px 0 20px}
+        .route{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;font-weight:700;margin:40px 0}
+        .current{background:#0d6efd;color:#fff;padding:.3rem .8rem;border-radius:999px}
+        footer{background:#212529;color:#fff;padding:30px;margin-top:50px}
+        /* Custom map styling */
+        .map-container { height: 450px; width: 100%; border-radius: 8px; border: 1px solid #dee2e6; z-index: 1; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-size:1rem!important;letter-spacing:-0.3px;">
             European Vacation 2026
         </a>
+        <span class="navbar-text ms-auto me-2 text-white">Cities</span>
+        <button aria-controls="citiesMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#citiesMenu" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="citiesMenu">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="london.html">London</a>
+                <a class="nav-link active" href="brussels.html">Brussels</a>
+                <a class="nav-link" href="amsterdam.html">Amsterdam</a>
+                <a class="nav-link" href="munich.html">Munich</a>
+                <a class="nav-link" href="salzburg.html">Salzburg</a>
+                <a class="nav-link" href="vienna.html">Vienna</a>
+                <a class="nav-link" href="krakow.html">Kraków</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
-<span class="navbar-text ms-auto me-2 text-white">Cities</span><button aria-controls="citiesMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#citiesMenu" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="citiesMenu"><div class="navbar-nav ms-auto"><a class="nav-link" href="london.html">London</a><a class="nav-link active" href="brussels.html">Brussels</a><a class="nav-link" href="amsterdam.html">Amsterdam</a><a class="nav-link" href="munich.html">Munich</a><a class="nav-link" href="salzburg.html">Salzburg</a><a class="nav-link" href="vienna.html">Vienna</a><a class="nav-link" href="krakow.html">Kraków</a></div></div></div>
-</nav><header class="hero"><img src="images/brussels-hero.png"/><div class="hero-content"><h1 class="display-2 fw-bold">Brussels</h1><p class="lead">August 9–11, 2026</p><span class="badge bg-warning text-dark fs-6">Includes Full-Day Excursion to Bruges</span></div></header><div class="container py-5"><div class="route">London ➜ <span class="current">Brussels</span> ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ Vienna ➜ Kraków ➜ London</div><h2 class="section-title">Transportation</h2><div class="row g-4"><div class="col-md-4"><div class="card shadow"><div class="card-body"><h4>🚄 Eurostar Arrival</h4><p>Aug 9<br/>London 8:34 AM → Brussels 12:05 PM</p></div></div></div><div class="col-md-4"><div class="card shadow"><div class="card-body"><h4>🚆 Train to Bruges</h4><p>Aug 10<br/>Bruxelles-Nord ↔ Brugge<br/>2nd class, Round trip<br/>Order: 1X7RYT7Q</p></div></div></div><div class="col-md-4"><div class="card shadow"><div class="card-body"><h4>🚆 Train to Amsterdam</h4><p>Aug 11<br/>Brussels Midi / Zuid 8:53 AM → Amsterdam Centraal 10:50 AM<br/>Train: 9309, Coach: 15, Seat: 88</p></div></div></div></div><h2 class="section-title">Hotel</h2><div class="card shadow"><div class="card-body"><h4>DoubleTree by Hilton Brussels City</h4><p>Rue Gineste 3, Brussels BRU 1210 BE<br/>📞 +3222036200<br/>Check In: Sunday, Aug 09 at 3:00 PM<br/>Check Out: Tuesday, Aug 11 at 12:00 PM<br/>2 Nights</p></div></div><h2 class="section-title">Tours &amp; Activities</h2><div class="card shadow"><div class="card-body"><h4>🚶 Walking tour of Bruges with boat option and/or beer tasting</h4><p>Aug 10, 2026<br/>Option selected: Tour + Boat in English 14:00<br/>Travelers: 4 Adults, 2 Youths<br/>Duration: 2 hours 30 minutes (approx.)<br/>Booking reference #: 1423182655</p></div></div><h2 class="section-title">Brussels &amp; Bruges Itinerary</h2><table class="table table-bordered"><tr><th>Date</th><th>Plan</th></tr><tr><td>Aug 9</td><td>Arrive in Brussels.</td></tr><tr><td>Aug 10</td><td>Explore Brussels.</td></tr><tr><td>Aug 11</td><td><b>Day Trip to Bruges</b> including canals, Markt Square, Belfry, Burg Square, Church of Our Lady and Minnewater Park.</td></tr><tr><td>Aug 12</td><td>Depart for Amsterdam.</td></tr></table><h2 class="section-title">Map</h2><div class="ratio ratio-16x9"><iframe src="https://www.google.com/maps?q=Brussels,Belgium&amp;output=embed"></iframe></div><div class="d-flex justify-content-between my-5"><a class="btn btn-secondary" href="london.html">⬅ London</a><a class="btn btn-primary" href="amsterdam.html">Amsterdam ➜</a></div></div><footer><div class="container text-center">European Vacation 2026</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<header class="hero">
+    <img src="images/brussels-hero.png"/>
+    <div class="hero-content">
+        <h1 class="display-2 fw-bold">Brussels</h1>
+        <p class="lead">August 9–11, 2026</p>
+        <span class="badge bg-warning text-dark fs-6">Includes Full-Day Excursion to Bruges</span>
+    </div>
+</header>
+
+<div class="container py-5">
+    <div class="route">London ➜ <span class="current">Brussels</span> ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ Vienna ➜ Kraków ➜ London</div>
+    
+    <h2 class="section-title">Transportation</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>🚄 Eurostar Arrival</h4>
+                    <p>Aug 9<br/>London 8:34 AM → Brussels 12:05 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>🚆 Train to Bruges</h4>
+                    <p>Aug 10<br/>Bruxelles-Nord ↔ Brugge<br/>2nd class, Round trip<br/>Order: 1X7RYT7Q</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4>🚆 Train to Amsterdam</h4>
+                    <p>Aug 11<br/>Brussels Midi / Zuid 8:53 AM → Amsterdam Centraal 10:50 AM<br/>Train: 9309, Coach: 15, Seat: 88</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Hotel</h2>
+    <div class="card shadow">
+        <div class="card-body">
+            <h4>DoubleTree by Hilton Brussels City</h4>
+            <p>Rue Gineste 3, Brussels BRU 1210 BE<br/>📞 +3222036200<br/>Check In: Sunday, Aug 09 at 3:00 PM<br/>Check Out: Tuesday, Aug 11 at 12:00 PM<br/>2 Nights</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Tours &amp; Activities</h2>
+    <div class="card shadow">
+        <div class="card-body">
+            <h4>🚶 Walking tour of Bruges with boat option and/or beer tasting</h4>
+            <p>Aug 10, 2026<br/>Option selected: Tour + Boat in English 14:00<br/>Travelers: 4 Adults, 2 Youths<br/>Duration: 2 hours 30 minutes (approx.)<br/>Booking reference #: 1423182655</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Brussels &amp; Bruges Itinerary</h2>
+    <table class="table table-bordered">
+        <tr><th>Date</th><th>Plan</th></tr>
+        <tr><td>Aug 9</td><td>Arrive in Brussels.</td></tr>
+        <tr><td>Aug 10</td><td>Explore Brussels.</td></tr>
+        <tr><td>Aug 11</td><td><b>Day Trip to Bruges</b> including canals, Markt Square, Belfry, Burg Square, Church of Our Lady and Minnewater Park.</td></tr>
+        <tr><td>Aug 12</td><td>Depart for Amsterdam.</td></tr>
+    </table>
+
+    <h2 class="section-title">Maps</h2>
+    <div class="row g-4">
+        <!-- Brussels Map -->
+        <div class="col-md-6">
+            <h4>Brussels Locations</h4>
+            <div id="brussels-map" class="map-container"></div>
+        </div>
+        <!-- Bruges Map -->
+        <div class="col-md-6">
+            <h4>Bruges Locations</h4>
+            <div id="bruges-map" class="map-container"></div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between my-5">
+        <a class="btn btn-secondary" href="london.html">⬅ London</a>
+        <a class="btn btn-primary" href="amsterdam.html">Amsterdam ➜</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container text-center">European Vacation 2026</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Leaflet JS for Maps -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize Brussels Map
+    var brusselsMap = L.map('brussels-map').setView([50.8505, 4.3560], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(brusselsMap);
+
+    // Brussels Pins
+    L.marker([50.8553, 4.3572]).addTo(brusselsMap).bindPopup('<b>DoubleTree by Hilton Brussels City</b><br>Hotel').openPopup();
+    L.marker([50.8605, 4.3618]).addTo(brusselsMap).bindPopup('<b>Bruxelles-Nord</b><br>Train to Bruges');
+    L.marker([50.8357, 4.3365]).addTo(brusselsMap).bindPopup('<b>Brussels Midi / Zuid</b><br>Eurostar / Train to Amsterdam');
+
+    // Initialize Bruges Map
+    var brugesMap = L.map('bruges-map').setView([51.2040, 3.2245], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(brugesMap);
+
+    // Bruges Pins
+    L.marker([51.1974, 3.2184]).addTo(brugesMap).bindPopup('<b>Brugge Station</b><br>Arrival/Departure');
+    L.marker([51.2086, 3.2242]).addTo(brugesMap).bindPopup('<b>Markt Square</b>');
+    L.marker([51.2081, 3.2242]).addTo(brugesMap).bindPopup('<b>Belfry of Bruges</b>');
+    L.marker([51.2083, 3.2267]).addTo(brugesMap).bindPopup('<b>Burg Square</b>');
+    L.marker([51.2046, 3.2246]).addTo(brugesMap).bindPopup('<b>Church of Our Lady</b>');
+    L.marker([51.1969, 3.2238]).addTo(brugesMap).bindPopup('<b>Minnewater Park</b>');
+</script>
+</body>
+</html>
