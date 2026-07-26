@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Kraków | European Vacation 2026</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Leaflet CSS for Maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
 body{background:#f5f5f5}
 .navbar-brand{font-size:1.25rem;font-weight:600;color:#fff;text-decoration:none}
@@ -22,6 +23,8 @@ body{background:#f5f5f5}
 .timeline .event{margin-bottom:25px}
 .card{border:none}
 footer{background:#212529;color:#fff;padding:30px;margin-top:50px}
+/* Custom map styling */
+.map-container { height: 450px; width: 100%; border-radius: 8px; border: 1px solid #dee2e6; z-index: 1; }
 </style>
 </head>
 <body>
@@ -99,9 +102,7 @@ London ➜ Brussels ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ Vienna ➜ <span c
 <div class="col-md-4"><div class="card shadow h-100"><div class="card-body"><h4>🕊 Auschwitz</h4><p>Visit one of history's most important memorial sites.</p></div></div></div>
 </div>
 <h2 class="section-title">Interactive Map</h2>
-<div class="ratio ratio-16x9">
-<iframe loading="lazy" src="https://www.google.com/maps?q=Krakow,+Poland&amp;output=embed"></iframe>
-</div>
+<div id="krakow-map" class="map-container"></div>
 <h2 class="section-title">Photo Gallery</h2>
 <div class="alert alert-info">
 After the trip, add photos of Wawel Castle, Main Market Square, St. Mary's Basilica, Auschwitz-Birkenau, Schindler Factory and your Golf Buggy Tour.
@@ -112,6 +113,29 @@ After the trip, add photos of Wawel Castle, Main Market Square, St. Mary's Basil
 </div>
 </div>
 <footer><div class="container text-center">Adler / Peterman Family European Vacation 2026</div></footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Leaflet JS for Maps -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize Kraków Map centered slightly west to accommodate the airport
+    var krakowMap = L.map('krakow-map').setView([50.0614, 19.9383], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(krakowMap);
+
+    // Kraków Pins
+    L.marker([50.0673, 19.9880]).addTo(krakowMap).bindPopup('<b>Hampton by Hilton Krakow</b><br>Hotel').openPopup();
+    L.marker([50.0619, 19.9368]).addTo(krakowMap).bindPopup('<b>Main Market Square / Old Town</b>');
+    L.marker([50.0540, 19.9354]).addTo(krakowMap).bindPopup('<b>Wawel Castle</b>');
+    L.marker([50.0616, 19.9373]).addTo(krakowMap).bindPopup('<b>St. Mary\'s Basilica</b>');
+    L.marker([50.0617, 19.9370]).addTo(krakowMap).bindPopup('<b>Cloth Hall</b>');
+    L.marker([50.0474, 19.9618]).addTo(krakowMap).bindPopup('<b>Schindler Factory</b>');
+    L.marker([50.0777, 19.7848]).addTo(krakowMap).bindPopup('<b>Kraków Airport</b><br>Flights OS679 & BA873');
+    
+    // Auschwitz is about an hour west of Kraków. It is pinned but may require panning out to view.
+    L.marker([50.0274, 19.2020]).addTo(krakowMap).bindPopup('<b>Auschwitz-Birkenau Memorial</b>');
+</script>
 </body>
 </html>
