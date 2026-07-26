@@ -57,7 +57,7 @@
     <h2 class="section-title">Transportation</h2>
     <div class="row g-4">
         <div class="col-md-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h4>🚄 Eurostar Arrival</h4>
                     <p>Aug 9<br/>London 8:34 AM → Brussels 12:05 PM</p>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h4>🚆 Train to Bruges</h4>
                     <p>Aug 10<br/>Bruxelles-Nord ↔ Brugge<br/>2nd class, Round trip<br/>Order: 1X7RYT7Q</p>
@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card shadow">
+            <div class="card shadow h-100">
                 <div class="card-body">
                     <h4>🚆 Train to Amsterdam</h4>
                     <p>Aug 11<br/>Brussels Midi / Zuid 8:53 AM → Amsterdam Centraal 10:50 AM<br/>Train: 9309, Coach: 15, Seat: 88</p>
@@ -91,15 +91,28 @@
     </div>
 
     <h2 class="section-title">Tours &amp; Activities</h2>
-    <div class="card shadow">
-        <div class="card-body">
-            <h4>🚶 Walking tour of Bruges with boat option and/or beer tasting</h4>
-            <p>Aug 10, 2026<br/>Option selected: Tour + Boat in English 14:00<br/>Travelers: 4 Adults, 2 Youths<br/>Duration: 2 hours 30 minutes (approx.)<br/>Booking reference #: 1423182655</p>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h4>🏰 Royal Palace Tour</h4>
+                    <p>August 9, 2026<br/>
+                    Time: 3:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h4>🚶 Walking tour of Bruges with boat option and/or beer tasting</h4>
+                    <p>Aug 10, 2026<br/>Option selected: Tour + Boat in English 14:00<br/>Travelers: 4 Adults, 2 Youths<br/>Duration: 2 hours 30 minutes (approx.)<br/>Booking reference #: 1423182655</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <h2 class="section-title">Brussels &amp; Bruges Itinerary</h2>
-    <table class="table table-bordered">
+    <table class="table table-bordered mt-4">
         <tr><th>Date</th><th>Plan</th></tr>
         <tr><td>Aug 9</td><td>Arrive in Brussels.</td></tr>
         <tr><td>Aug 10</td><td>Explore Brussels.</td></tr>
@@ -146,6 +159,7 @@
     L.marker([50.8553, 4.3572]).addTo(brusselsMap).bindPopup('<b>DoubleTree by Hilton Brussels City</b><br>Hotel').openPopup();
     L.marker([50.8605, 4.3618]).addTo(brusselsMap).bindPopup('<b>Bruxelles-Nord</b><br>Train to Bruges');
     L.marker([50.8357, 4.3365]).addTo(brusselsMap).bindPopup('<b>Brussels Midi / Zuid</b><br>Eurostar / Train to Amsterdam');
+    L.marker([50.8423, 4.3625]).addTo(brusselsMap).bindPopup('<b>Royal Palace</b><br>Tour at 3:00 PM');
 
     // Initialize Bruges Map
     var brugesMap = L.map('bruges-map').setView([51.2040, 3.2245], 14);
