@@ -6,6 +6,8 @@
 <title>London | European Vacation 2026</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Leaflet CSS for Maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 <style>
 
@@ -119,6 +121,9 @@ footer{
     padding:30px;
     margin-top:50px;
 }
+
+/* Custom map styling */
+.map-container { height: 450px; width: 100%; border-radius: 8px; border: 1px solid #dee2e6; z-index: 1; }
 
 </style>
 
@@ -457,14 +462,7 @@ Churchill War Rooms and the Imperial War Museum.
 
 <h2 class="section-title">Interactive Map</h2>
 
-<div class="ratio ratio-16x9">
-
-<iframe
-src="https://www.google.com/maps?q=London&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
+<div id="london-map" class="map-container"></div>
 
 <h2 class="section-title">Photo Gallery</h2>
 
@@ -499,6 +497,37 @@ Adler / Peterman Family European Vacation 2026
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Leaflet JS for Maps -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize London Map
+    var londonMap = L.map('london-map').setView([51.505, -0.12], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(londonMap);
 
+    // Hotels
+    L.marker([51.5244, -0.1245]).addTo(londonMap).bindPopup('<b>Holiday Inn London – Bloomsbury</b><br>Hotel (Aug 8-9)').openPopup();
+    L.marker([51.5173, -0.0708]).addTo(londonMap).bindPopup('<b>Hampton by Hilton London City</b><br>Hotel (Aug 22-25)');
+    
+    // Transit
+    L.marker([51.4700, -0.4543]).addTo(londonMap).bindPopup('<b>London Heathrow Airport</b><br>Arrival/Departure');
+    L.marker([51.5314, -0.1261]).addTo(londonMap).bindPopup('<b>St Pancras International</b><br>Eurostar Departure');
+
+    // Landmarks & Tours
+    L.marker([51.5014, -0.1419]).addTo(londonMap).bindPopup('<b>Buckingham Palace & State Rooms</b>');
+    L.marker([51.4993, -0.1273]).addTo(londonMap).bindPopup('<b>Westminster Abbey</b>');
+    L.marker([51.5007, -0.1246]).addTo(londonMap).bindPopup('<b>Big Ben</b>');
+    L.marker([51.5025, -0.1348]).addTo(londonMap).bindPopup('<b>St. James\'s Park</b>');
+    L.marker([51.5081, -0.0759]).addTo(londonMap).bindPopup('<b>Tower of London</b>');
+    L.marker([51.5055, -0.0754]).addTo(londonMap).bindPopup('<b>Tower Bridge</b>');
+    L.marker([51.5320, -0.1773]).addTo(londonMap).bindPopup('<b>Abbey Road Crossing & Studios</b>');
+    L.marker([51.5021, -0.1293]).addTo(londonMap).bindPopup('<b>Churchill War Rooms</b>');
+    L.marker([51.4958, -0.1086]).addTo(londonMap).bindPopup('<b>Imperial War Museum</b>');
+    
+    // Sondheim Theatre for Les Misérables
+    L.marker([51.5115, -0.1325]).addTo(londonMap).bindPopup('<b>Sondheim Theatre</b><br>Les Misérables');
+</script>
 </body>
 </html>
