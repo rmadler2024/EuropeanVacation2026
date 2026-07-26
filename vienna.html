@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Vienna | European Vacation 2026</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Leaflet CSS for Maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
 body{background:#f5f5f5;}
 .navbar-brand{font-size:1.25rem;font-weight:600;color:#ffffff;text-decoration:none;white-space:nowrap;}
@@ -23,6 +24,8 @@ body{background:#f5f5f5;}
 .timeline .event{margin-bottom:25px;}
 .card{border:none;}
 footer{background:#212529;color:#fff;padding:30px;margin-top:50px;}
+/* Custom map styling */
+.map-container { height: 450px; width: 100%; border-radius: 8px; border: 1px solid #dee2e6; z-index: 1; }
 </style>
 </head>
 <body>
@@ -78,11 +81,20 @@ London ➜ Brussels ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ <span class="curre
 <p>Confirmation #3361883900</p>
 </div></div></div>
 </div>
-<h2 class="section-title">Reservations</h2>
-<table class="table table-bordered table-striped">
-<thead class="table-dark"><tr><th>Date</th><th>Time</th><th>Reservation</th></tr></thead>
-<tbody><tr><td>August 19</td><td>10:30 AM</td><td>Schönbrunn Palace Tour</td></tr></tbody>
-</table>
+
+<h2 class="section-title">Tours &amp; Activities</h2>
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card shadow h-100">
+            <div class="card-body">
+                <h4>🏰 Schönbrunn Palace Tour</h4>
+                <p><strong>Date:</strong> Wednesday, August 19, 2026<br/>
+                <strong>Time:</strong> 10:30 AM</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2 class="section-title">Daily Timeline</h2>
 <div class="timeline">
 <div class="event"><h5>Wednesday, August 19</h5>
@@ -96,9 +108,7 @@ London ➜ Brussels ➜ Amsterdam ➜ Munich ➜ Salzburg ➜ <span class="curre
 <div class="col-md-4"><div class="card shadow h-100"><div class="card-body"><h4>☕ Viennese Culture</h4><p>Vienna State Opera and Café Central.</p></div></div></div>
 </div>
 <h2 class="section-title">Interactive Map</h2>
-<div class="ratio ratio-16x9">
-<iframe loading="lazy" src="https://www.google.com/maps?q=Schönbrunn+Palace+Vienna&amp;output=embed"></iframe>
-</div>
+<div id="vienna-map" class="map-container"></div>
 <h2 class="section-title">Photo Gallery</h2>
 <div class="alert alert-info">
 After the trip, add photos of Schönbrunn Palace, Hofburg Palace, St. Stephen's Cathedral, the Vienna State Opera, Café Central and the city center.
@@ -110,5 +120,28 @@ After the trip, add photos of Schönbrunn Palace, Hofburg Palace, St. Stephen's 
 </div>
 <footer><div class="container text-center">Adler / Peterman Family European Vacation 2026</div></footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Leaflet JS for Maps -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize Vienna Map
+    var viennaMap = L.map('vienna-map').setView([48.196, 16.37], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(viennaMap);
+
+    // Hotel & Transit Pins
+    L.marker([48.2096, 16.4253]).addTo(viennaMap).bindPopup('<b>Hilton Vienna Waterfront</b><br>Hotel').openPopup();
+    L.marker([48.1851, 16.3776]).addTo(viennaMap).bindPopup('<b>Wien Hauptbahnhof</b><br>Arrival via ÖBB Railjet');
+    L.marker([48.1103, 16.5697]).addTo(viennaMap).bindPopup('<b>Vienna International Airport (VIE)</b><br>Flight OS679 to Kraków');
+
+    // Landmark Pins
+    L.marker([48.1848, 16.3122]).addTo(viennaMap).bindPopup('<b>Schönbrunn Palace & Grand Gallery</b><br>Tour at 10:30 AM');
+    L.marker([48.1782, 16.3152]).addTo(viennaMap).bindPopup('<b>Gloriette (Schönbrunn Gardens)</b>');
+    L.marker([48.2065, 16.3653]).addTo(viennaMap).bindPopup('<b>Hofburg Palace & Imperial Apartments</b>');
+    L.marker([48.2084, 16.3731]).addTo(viennaMap).bindPopup('<b>St. Stephen\'s Cathedral</b>');
+    L.marker([48.2029, 16.3690]).addTo(viennaMap).bindPopup('<b>Vienna State Opera</b>');
+    L.marker([48.2104, 16.3655]).addTo(viennaMap).bindPopup('<b>Café Central</b>');
+</script>
 </body>
 </html>
